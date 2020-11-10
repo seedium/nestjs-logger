@@ -1,0 +1,28 @@
+.gitattributes !filter !diff
+
+# NPM
+/node_modules
+
+# IDE
+/**/.idea
+/**/.awcache
+/**/.vscode
+/**/*.code-workspace
+/**/.project
+/**/.classpath
+/**/.c9/
+/**/*.launch
+/**/.settings/
+*.sublime-workspace
+
+# misc
+.DS_Store
+/npm-debug.log
+/yarn-error.log
+
+# Tests
+/coverage
+/.nyc_output
+
+# Outputs
+/dist

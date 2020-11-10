@@ -1,0 +1,73 @@
+version: 2
+
+aliases:
+  - &restore-cache
+    restore_cache:
+      key: dependency-cache-{{ checksum "package.json" }}
+  - &install-deps
+    run:
+      name: Install dependencies
+      command: npm ci
+  - &build-packages
+    run:
+      name: Build
+      command: npm run build
+
+jobs:
+  build:
+    working_directory: ~/nestjs-logger
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run:
+          name: Update NPM version
+          command: 'sudo npm install -g npm@latest'
+      - *restore-cache
+      - *install-deps
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Build
+          command: npm run build
+
+  lint:
+    working_directory: ~/nestjs-logger
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - *restore-cache
+      - *install-deps
+      - run:
+          name: Run Eslint
+          command: npm run lint && npm run lint:test
+      - run:
+          name: Run Prettier
+          command: npm run format -- --check
+
+  tests:
+    working_directory: ~/nestjs-logger
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - *restore-cache
+      - *install-deps
+      - run:
+          name: Run Tests
+          command: npm run test
+
+workflows:
+  version: 2
+  build-lint-test:
+    jobs:
+      - build
+      - lint:
+          requires:
+            - build
+      - tests:
+          requires:
+            - build

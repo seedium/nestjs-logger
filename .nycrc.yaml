@@ -1,0 +1,22 @@
+extends: "@istanbuljs/nyc-config-typescript"
+
+include:
+  - '**/*.ts'
+
+exclude:
+  - node_modules/
+  - test/**
+
+extension:
+  - .ts
+
+require:
+  - ts-node/register
+  - source-map-support/register
+
+reporter:
+  - text-summary
+  - html
+
+sourceMap: true
+instrument: true

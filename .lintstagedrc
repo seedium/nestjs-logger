@@ -1,0 +1,10 @@
+{
+  "lib/**/*.ts": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "test/**/*.spec.ts": [
+    "eslint -c .eslintrc.spec.yaml --fix",
+    "prettier --write"
+  ]
+}
