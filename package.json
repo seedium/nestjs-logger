@@ -1,14 +1,14 @@
 {
-  "name": "nestjs-logger",
+  "name": "nestjs-universal-logger",
   "version": "1.0.0",
   "description": "Logger module for NestJS application",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seedium/nestjs-configuration.git"
+    "url": "git+https://github.com/seedium/nestjs-universal-logger.git"
   },
   "keywords": [
     "nestjs",
-    "config",
+    "logger",
     "typescript",
     "seedium",
     "di"
@@ -16,9 +16,9 @@
   "author": "Kostya Zgara",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/seedium/nestjs-configuration/issues"
+    "url": "https://github.com/seedium/nestjs-universal-logger/issues"
   },
-  "homepage": "https://github.com/seedium/nestjs-configuration#readme",
+  "homepage": "https://github.com/seedium/nestjs-universal-logger#readme",
   "scripts": {
     "clean": "rimraf -rf 'dist' 'tsconfig.tsbuildinfo'",
     "build": "npm run clean && tsc -p tsconfig.json",
