@@ -7,6 +7,7 @@ import { Logger, LoggerModule, LoggerToken } from '../lib';
 const expect = chai.expect;
 
 describe('LoggerModule', function () {
+  class TestLogger {}
   it('`forRoot` should inject pino logger by default', async () => {
     const module = await Test.createTestingModule({
       imports: [LoggerModule.forRoot()],
@@ -15,12 +16,32 @@ describe('LoggerModule', function () {
     expect(pinoLogger).instanceOf(PinoLogger);
   });
   it('`forFeature` should inject custom logger', async () => {
-    class TestLogger {}
     const module = await Test.createTestingModule({
       imports: [LoggerModule.forFeature(new TestLogger() as LoggerService)],
     }).compile();
     const testLogger = module.get(LoggerToken);
     expect(testLogger).instanceOf(TestLogger);
+  });
+  it('`forRoot` by default module should be scoped', () => {
+    const dynamicModule = LoggerModule.forRoot();
+    expect(dynamicModule).property('global').is.false;
+  });
+  it('`forFeature` by default module should be scoped', () => {
+    const dynamicModule = LoggerModule.forFeature(
+      new TestLogger() as LoggerService,
+    );
+    expect(dynamicModule).property('global').is.false;
+  });
+  it('`forRoot` module can be global', () => {
+    const dynamicModule = LoggerModule.forRoot({ global: true });
+    expect(dynamicModule).property('global').is.true;
+  });
+  it('`forFeature` can be global', () => {
+    const dynamicModule = LoggerModule.forFeature(
+      new TestLogger() as LoggerService,
+      { global: true },
+    );
+    expect(dynamicModule).property('global').is.true;
   });
   describe('Logger module should export', () => {
     @Injectable()

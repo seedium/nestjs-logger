@@ -2,10 +2,12 @@ import { DynamicModule, LoggerService } from '@nestjs/common';
 import { Logger } from './logger.provider';
 import { PinoLogger } from './loggers';
 import { LoggerToken } from './constants';
-import { ExtendedPinoOptions } from './interfaces';
+import { ExtendedPinoOptions, LoggerModuleOptions } from './interfaces';
 
 export class LoggerModule {
-  static forRoot(options?: ExtendedPinoOptions): DynamicModule {
+  static forRoot(
+    options?: ExtendedPinoOptions & LoggerModuleOptions,
+  ): DynamicModule {
     return {
       module: LoggerModule,
       providers: [
@@ -16,9 +18,13 @@ export class LoggerModule {
         },
       ],
       exports: [Logger],
+      global: options?.global || false,
     };
   }
-  static forFeature(featureLogger: LoggerService): DynamicModule {
+  static forFeature(
+    featureLogger: LoggerService,
+    options: LoggerModuleOptions = {},
+  ): DynamicModule {
     return {
       module: LoggerModule,
       providers: [
@@ -29,6 +35,7 @@ export class LoggerModule {
         },
       ],
       exports: [Logger],
+      global: options.global || false,
     };
   }
 }
