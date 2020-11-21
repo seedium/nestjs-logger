@@ -65,7 +65,10 @@ export class PinoLogger implements LoggerService, OnApplicationShutdown {
     } else if (isPlainObject(message)) {
       options = message as O.Object;
     } else {
-      options = this.transformToObject(message);
+      options = {
+        ...this.transformToObject(message),
+        ...(message as Record<string, unknown>),
+      };
     }
 
     if (trace) {

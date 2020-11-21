@@ -80,12 +80,20 @@ describe('Pino logger', () => {
       mockPinoLogger.verify();
     });
     it('should log any type', () => {
-      const testError = new Error('test');
+      class TestError extends Error {
+        public readonly test: string;
+        constructor() {
+          super('test');
+          this.test = 'foo';
+        }
+      }
+      const testError = new TestError();
       mockPinoLogger.expects('info').callsFake((message) =>
         expect(message).deep.eq({
           context: undefined,
           message: testError.message,
           stack: testError.stack,
+          test: 'foo',
         }),
       );
       pinoLogger.log(testError);
