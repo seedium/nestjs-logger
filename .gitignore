@@ -1,7 +1,17 @@
 .gitattributes !filter !diff
 
-# NPM
-/node_modules
+### Node ###
+/**/.yarn/*
+!/**/.yarn/releases
+!/**/.yarn/plugins
+!/**/.yarn/sdks
+/**/yarn.lock   -diff -merge
+/**/yarn.lock    linguist-generated=true
+
+# Swap the comments on the following lines if you don't wish to use zero-installs
+# Documentation here: https://yarnpkg.com/features/zero-installs
+!/**/.yarn/cache
+#/**/.pnp.*
 
 # IDE
 /**/.idea
