@@ -1,64 +1,48 @@
 version: 2
 
 aliases:
-  - &restore-cache
-    restore_cache:
-      key: dependency-cache-{{ checksum "package.json" }}
   - &install-deps
     run:
       name: Install dependencies
-      command: npm ci
+      command: yarn install --immutable
   - &build-packages
     run:
       name: Build
-      command: npm run build
+      command: yarn build
 
 jobs:
   build:
     working_directory: ~/nestjs-logger
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14
     steps:
       - checkout
-      - run:
-          name: Update NPM version
-          command: 'sudo npm install -g npm@latest'
-      - *restore-cache
       - *install-deps
-      - save_cache:
-          key: dependency-cache-{{ checksum "package.json" }}
-          paths:
-            - ./node_modules
-      - run:
-          name: Build
-          command: npm run build
-
+      - *build-packages
   lint:
     working_directory: ~/nestjs-logger
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14
     steps:
       - checkout
-      - *restore-cache
       - *install-deps
       - run:
           name: Run Eslint
-          command: npm run lint && npm run lint:test
+          command: yarn lint && yarn lint:test
       - run:
           name: Run Prettier
-          command: npm run format -- --check
+          command: yarn format --check
 
   tests:
     working_directory: ~/nestjs-logger
     docker:
-      - image: circleci/node:12
+      - image: circleci/node:14
     steps:
       - checkout
-      - *restore-cache
       - *install-deps
       - run:
           name: Run Tests
-          command: npm run test
+          command: yarn test
 
 workflows:
   version: 2
