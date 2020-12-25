@@ -31,13 +31,15 @@ export class Logger implements LoggerService {
   }
   public error(messageOrObject: unknown): void {
     if (messageOrObject instanceof Error) {
+      const { stack, message, name, ...properties } = messageOrObject;
       this.callFunction(
         'error',
         {
-          error: messageOrObject.name,
-          msg: messageOrObject.message,
+          error: name,
+          msg: message,
+          ...properties,
         },
-        messageOrObject.stack,
+        stack,
       );
     } else {
       this.callFunction('error', messageOrObject);
