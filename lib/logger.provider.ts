@@ -13,7 +13,8 @@ import { LoggerToken } from './constants';
 
 @Injectable({ scope: Scope.TRANSIENT })
 export class Logger implements LoggerService {
-  @Optional() @Inject(LoggerToken) private readonly _logger: LoggerService;
+  @Optional() @Inject(LoggerToken) private _logger: LoggerService;
+
   protected context?: string;
 
   constructor(@Optional() context?: string | unknown | Type<unknown>) {
@@ -21,6 +22,9 @@ export class Logger implements LoggerService {
   }
   public setContext(context: string | unknown | Type<unknown>): void {
     this.context = this.getContextName(context);
+  }
+  public injectLogger(logger: LoggerService): void {
+    this._logger = logger;
   }
   public log(messageOrObject: unknown): void {
     this.callFunction('log', messageOrObject);
