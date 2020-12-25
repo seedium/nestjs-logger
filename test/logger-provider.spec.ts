@@ -17,30 +17,40 @@ describe('LoggerProvider', () => {
     verbose(): any {}
   }
   let testEngineLogger: TestEngineLogger;
+  let mockTestEngineLogger: sinon.SinonMock;
   let testLogger: Logger;
+
   beforeEach(() => {
     testEngineLogger = new TestEngineLogger();
+    mockTestEngineLogger = sinon.mock(testEngineLogger);
     testLogger = new Logger();
-    // @ts-expect-error engine logger will be injected automatically
-    testLogger._logger = testEngineLogger;
+    testLogger.injectLogger(testEngineLogger);
   });
   afterEach(() => {
     sinon.restore();
   });
+  it('should inject logger', () => {
+    const testLoggerCase = new Logger();
+    const testInjectedLogger = new TestEngineLogger();
+    expect(testLoggerCase).not.property('_logger');
+    testLoggerCase.injectLogger(testInjectedLogger);
+    expect(testLoggerCase).property('_logger').eq(testInjectedLogger);
+  });
   describe('logging levels', () => {
     it('valid log level should be proxies to engine logger', () => {
-      const mock = sinon.mock(testEngineLogger);
-      logLevels.forEach((logLevel) => mock.expects(logLevel).calledOnce);
+      logLevels.forEach(
+        (logLevel) => mockTestEngineLogger.expects(logLevel).calledOnce,
+      );
       logLevels.forEach((logLevel) => testLogger[logLevel]('test'));
-      mock.verify();
+      mockTestEngineLogger.verify();
     });
     it('if logger is undefined do nothing', () => {
-      // @ts-expect-error simulate a case when engine logger was not injected
-      testLogger._logger = undefined;
-      const mock = sinon.mock(testEngineLogger);
-      logLevels.forEach((logLevel) => mock.expects(logLevel).never());
-      logLevels.forEach((logLevel) => testLogger[logLevel]('test'));
-      mock.verify();
+      const testLoggerCase = new Logger();
+      logLevels.forEach((logLevel) =>
+        mockTestEngineLogger.expects(logLevel).never(),
+      );
+      logLevels.forEach((logLevel) => testLoggerCase[logLevel]('test'));
+      mockTestEngineLogger.verify();
     });
     it('if some logger level is unavailable should not fall', () => {
       class TestEngineLoggerWithoutLevel implements LoggerService {
@@ -49,8 +59,7 @@ describe('LoggerProvider', () => {
         warn(): any {}
         debug(): any {}
       }
-      // @ts-expect-error engine logger will be injected automatically
-      testLogger._logger = new TestEngineLoggerWithoutLevel();
+      testLogger.injectLogger(new TestEngineLoggerWithoutLevel());
       logLevels.forEach((logLevel) => testLogger[logLevel]('test'));
     });
     it('error level can be provided with stack trace', () => {
