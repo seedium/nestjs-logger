@@ -104,6 +104,32 @@ describe('LoggerProvider', () => {
         class TestClass {}
         const testClass = new TestClass();
         testLoggerContext.setContext(testClass);
+        describe('logging custom errors', () => {
+          it('should output custom properties of custom errors', () => {
+            class TestError extends Error {
+              public readonly test: string;
+              constructor() {
+                super('test');
+                this.test = 'foo';
+              }
+            }
+            const testError = new TestError();
+            const stubLoggerCallFunction = sinon.stub(
+              testLogger,
+              <any>'callFunction',
+            );
+            testLogger.error(testError);
+            expect(stubLoggerCallFunction).calledOnceWithExactly(
+              'error',
+              {
+                error: testError.name,
+                msg: testError.message,
+                test: testError.test,
+              },
+              testError.stack,
+            );
+          });
+        });
         expect(testLoggerContext).property('context').eq(TestClass.name);
       });
     });
