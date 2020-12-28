@@ -1,9 +1,12 @@
 import * as chai from 'chai';
 import * as sinon from 'sinon';
 import * as sinonChai from 'sinon-chai';
-import { LoggerService } from '@nestjs/common';
+import * as chaiAsPromised from 'chai-as-promised';
+import { Module, LoggerService } from '@nestjs/common';
+import { NestFactory } from '@nestjs/core';
 import { Logger } from '../lib';
 
+chai.use(chaiAsPromised);
 chai.use(sinonChai);
 const expect = chai.expect;
 
@@ -89,6 +92,42 @@ describe('LoggerProvider', () => {
       testLoggerContext.setContext(overrideContextName);
       expect(testLoggerContext).property('context').eq(overrideContextName);
     });
+    it('can be overrided on each logger level', () => {
+      const overrideContextName = 'override';
+      const testMessage = 'test-message';
+      const testTrace = 'test-trace';
+      testLogger.setContext('testContext');
+      mockTestEngineLogger
+        .expects('log')
+        .once()
+        .withExactArgs(testMessage, overrideContextName);
+      mockTestEngineLogger
+        .expects('warn')
+        .once()
+        .withExactArgs(testMessage, overrideContextName);
+      mockTestEngineLogger
+        .expects('debug')
+        .once()
+        .withExactArgs(testMessage, overrideContextName);
+      mockTestEngineLogger
+        .expects('verbose')
+        .once()
+        .withExactArgs(testMessage, overrideContextName);
+      mockTestEngineLogger
+        .expects('error')
+        .once()
+        .withExactArgs(testMessage, testTrace, overrideContextName);
+
+      logLevels.forEach((level) => {
+        if (level === 'error') {
+          testLogger.error(testMessage, testTrace, overrideContextName);
+        } else {
+          testLogger[level](testMessage, overrideContextName);
+        }
+      });
+
+      mockTestEngineLogger.verify();
+    });
     describe('can be set as', () => {
       it('string', () => {
         const string = 'string';
@@ -104,34 +143,83 @@ describe('LoggerProvider', () => {
         class TestClass {}
         const testClass = new TestClass();
         testLoggerContext.setContext(testClass);
-        describe('logging custom errors', () => {
-          it('should output custom properties of custom errors', () => {
-            class TestError extends Error {
-              public readonly test: string;
-              constructor() {
-                super('test');
-                this.test = 'foo';
-              }
-            }
-            const testError = new TestError();
-            const stubLoggerCallFunction = sinon.stub(
-              testLogger,
-              <any>'callFunction',
-            );
-            testLogger.error(testError);
-            expect(stubLoggerCallFunction).calledOnceWithExactly(
-              'error',
-              {
-                error: testError.name,
-                msg: testError.message,
-                test: testError.test,
-              },
-              testError.stack,
-            );
-          });
-        });
         expect(testLoggerContext).property('context').eq(TestClass.name);
       });
+    });
+  });
+  describe('logging custom errors', () => {
+    it('should output custom properties of custom errors', () => {
+      class TestError extends Error {
+        public readonly test: string;
+        constructor() {
+          super('test');
+          this.test = 'foo';
+        }
+      }
+      const testError = new TestError();
+      const stubLoggerCallFunction = sinon.stub(
+        testLogger,
+        <any>'callFunction',
+      );
+      testLogger.error(testError);
+      expect(stubLoggerCallFunction).calledOnceWithExactly(
+        'error',
+        {
+          error: testError.name,
+          msg: testError.message,
+          test: testError.test,
+        },
+        testError.stack,
+      );
+    });
+  });
+  describe('nest application', () => {
+    it('can be used as main logger', async () => {
+      @Module({})
+      class TestAppModule {}
+      mockTestEngineLogger.expects('log').atLeast(1);
+      await expect(
+        NestFactory.createApplicationContext(TestAppModule, {
+          logger: testLogger,
+          abortOnError: false,
+        }),
+      ).eventually.fulfilled;
+      mockTestEngineLogger.verify();
+    });
+    it('should output trace and message properly when error is occurred', async () => {
+      const testError = new Error('test');
+      class TestProvider {
+        constructor() {
+          throw testError;
+        }
+      }
+      @Module({
+        providers: [TestProvider],
+      })
+      class TestAppModule {}
+
+      mockTestEngineLogger
+        .expects('error')
+        .callsFake((message, stack, context) =>
+          expect({
+            message,
+            stack,
+            context,
+          }).deep.eq({
+            message: testError.message,
+            stack: testError.stack,
+            context: 'ExceptionHandler',
+          }),
+        );
+      const logger = new Logger();
+      logger.injectLogger(testEngineLogger);
+      await expect(
+        NestFactory.createApplicationContext(TestAppModule, {
+          logger,
+          abortOnError: false,
+        }),
+      ).eventually.rejectedWith(testError);
+      mockTestEngineLogger.verify();
     });
   });
 });
