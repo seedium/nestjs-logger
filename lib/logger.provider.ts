@@ -26,10 +26,14 @@ export class Logger implements LoggerService {
   public injectLogger(logger: LoggerService): void {
     this._logger = logger;
   }
-  public log(messageOrObject: unknown): void {
-    this.callFunction('log', messageOrObject);
+  public log(messageOrObject: unknown, context?: string): void {
+    this.callFunction('log', messageOrObject, context);
   }
-  public error(messageOrObject: unknown): void {
+  public error(
+    messageOrObject: unknown,
+    trace?: string,
+    context?: string,
+  ): void {
     if (messageOrObject instanceof Error) {
       const { stack, message, name, ...properties } = messageOrObject;
       this.callFunction(
@@ -42,30 +46,33 @@ export class Logger implements LoggerService {
         stack,
       );
     } else {
-      this.callFunction('error', messageOrObject);
+      this.callFunction('error', messageOrObject, context, trace);
     }
   }
-  public warn(messageOrObject: unknown): void {
-    this.callFunction('warn', messageOrObject);
+  public warn(messageOrObject: unknown, context?: string): void {
+    this.callFunction('warn', messageOrObject, context);
   }
-  public debug(messageOrObject: unknown): void {
-    this.callFunction('debug', messageOrObject);
+  public debug(messageOrObject: unknown, context?: string): void {
+    this.callFunction('debug', messageOrObject, context);
   }
-  public verbose(messageOrObject: unknown): void {
-    this.callFunction('verbose', messageOrObject);
+  public verbose(messageOrObject: unknown, context?: string): void {
+    this.callFunction('verbose', messageOrObject, context);
   }
   protected callFunction(
     level: LogLevel,
     message: unknown,
+    context?: string,
     trace?: string,
   ): void {
     if (!this._logger || !this._logger[level]) {
       return;
     }
+    context = context || this.context;
+
     if (trace && level === 'error') {
-      this._logger.error(message, trace, this.context);
+      this._logger.error(message, trace, context);
     } else {
-      (this._logger as Required<LoggerService>)[level](message, this.context);
+      (this._logger as Required<LoggerService>)[level](message, context);
     }
   }
   private getContextName(
