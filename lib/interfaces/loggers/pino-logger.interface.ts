@@ -1,11 +1,11 @@
-import { LoggerOptions as PinoLoggerOptions } from 'pino';
+import type { LoggerOptions as PinoLoggerOptions } from 'pino';
 
 interface ExtreameModePinoOptions {
   enabled?: boolean;
   tick?: number;
 }
 
-export interface ExtendedPinoOptions extends PinoLoggerOptions {
+export interface PinoOptions extends PinoLoggerOptions {
   extremeMode?: ExtreameModePinoOptions;
 }
 

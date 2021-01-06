@@ -1,41 +1,27 @@
-import { DynamicModule, LoggerService } from '@nestjs/common';
+import { DynamicModule, LoggerService, Type } from '@nestjs/common';
+import { LoggerModuleAsyncOptions, LoggerModuleOptions } from './interfaces';
+import { LoggerCoreModule } from './logger-core.module';
 import { Logger } from './logger.provider';
-import { PinoLogger } from './loggers';
-import { LoggerToken } from './constants';
-import { ExtendedPinoOptions, LoggerModuleOptions } from './interfaces';
 
 export class LoggerModule {
-  static forRoot(
-    options?: ExtendedPinoOptions & LoggerModuleOptions,
-  ): DynamicModule {
+  static forRoot(options?: LoggerModuleOptions): DynamicModule {
     return {
       module: LoggerModule,
-      providers: [
-        Logger,
-        {
-          provide: LoggerToken,
-          useFactory: () => new PinoLogger(options),
-        },
-      ],
-      exports: [Logger],
-      global: options?.global || false,
+      imports: [LoggerCoreModule.forRoot(options)],
     };
   }
-  static forFeature(
-    featureLogger: LoggerService,
-    options: LoggerModuleOptions = {},
-  ): DynamicModule {
+  static forRootAsync(options: LoggerModuleAsyncOptions): DynamicModule {
     return {
       module: LoggerModule,
-      providers: [
-        Logger,
-        {
-          provide: LoggerToken,
-          useValue: featureLogger,
-        },
-      ],
-      exports: [Logger],
-      global: options.global || false,
+      imports: [LoggerCoreModule.forRootAsync(options)],
+    };
+  }
+  static forFeature(engineLogger?: Type<LoggerService>): DynamicModule {
+    engineLogger = engineLogger || Logger;
+    return {
+      module: LoggerModule,
+      providers: [engineLogger],
+      exports: [engineLogger],
     };
   }
 }

@@ -9,11 +9,11 @@ import {
 } from '@nestjs/common';
 import type { O } from 'ts-toolbelt';
 import * as isString from 'lodash.isstring';
-import { LoggerToken } from './constants';
+import { LOGGER_TOKEN } from './logger.constants';
 
 @Injectable({ scope: Scope.TRANSIENT })
 export class Logger implements LoggerService {
-  @Optional() @Inject(LoggerToken) private _logger: LoggerService;
+  @Optional() @Inject(LOGGER_TOKEN) private _logger: LoggerService;
 
   protected context?: string;
 
