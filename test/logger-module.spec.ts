@@ -1,68 +1,119 @@
 import * as chai from 'chai';
-import { Test } from '@nestjs/testing';
-import { Injectable, LoggerService } from '@nestjs/common';
+import * as chaiAsPromised from 'chai-as-promised';
+import { Test, TestingModule } from '@nestjs/testing';
+import { Injectable, Module } from '@nestjs/common';
 import { PinoLogger } from '../lib/loggers';
-import { Logger, LoggerModule, LoggerToken } from '../lib';
+import {
+  Logger,
+  LoggerModule,
+  LOGGER_TOKEN,
+  LoggerModuleOptionsFactory,
+} from '../lib';
 
+chai.use(chaiAsPromised);
 const expect = chai.expect;
 
 describe('LoggerModule', function () {
-  class TestLogger {}
   it('`forRoot` should inject pino logger by default', async () => {
     const module = await Test.createTestingModule({
       imports: [LoggerModule.forRoot()],
     }).compile();
-    const pinoLogger = module.get(LoggerToken);
+    const pinoLogger = module.get(LOGGER_TOKEN);
     expect(pinoLogger).instanceOf(PinoLogger);
   });
-  it('`forFeature` should inject custom logger', async () => {
-    const module = await Test.createTestingModule({
-      imports: [LoggerModule.forFeature(new TestLogger() as LoggerService)],
-    }).compile();
-    const testLogger = module.get(LoggerToken);
-    expect(testLogger).instanceOf(TestLogger);
+  describe('`forRootAsync`', () => {
+    it('should inject pino logger by default', async () => {
+      const module = await Test.createTestingModule({
+        imports: [
+          LoggerModule.forRootAsync({
+            useFactory: () => ({
+              enabled: false,
+            }),
+          }),
+        ],
+      }).compile();
+      const pinoLogger = module.get(LOGGER_TOKEN);
+      expect(pinoLogger).instanceOf(PinoLogger);
+    });
+    it('can be used with `useClass` options factory', async () => {
+      @Injectable()
+      class TestLoggerConfigService implements LoggerModuleOptionsFactory {
+        public createLoggerOptions() {
+          return {
+            enabled: false,
+          };
+        }
+      }
+      await expect(
+        Test.createTestingModule({
+          imports: [
+            LoggerModule.forRootAsync({
+              useClass: TestLoggerConfigService,
+            }),
+          ],
+        }).compile(),
+      ).eventually.fulfilled;
+    });
+    it('can reuse existing config class', async () => {
+      @Injectable()
+      class TestLoggerConfigService implements LoggerModuleOptionsFactory {
+        public createLoggerOptions() {
+          return {
+            enabled: false,
+          };
+        }
+      }
+      @Module({
+        providers: [TestLoggerConfigService],
+        exports: [TestLoggerConfigService],
+      })
+      class TestModule {}
+
+      await expect(
+        Test.createTestingModule({
+          imports: [
+            LoggerModule.forRootAsync({
+              imports: [TestModule],
+              useExisting: TestLoggerConfigService,
+            }),
+          ],
+        }).compile(),
+      ).eventually.fulfilled;
+    });
   });
-  it('`forRoot` by default module should be scoped', () => {
-    const dynamicModule = LoggerModule.forRoot();
-    expect(dynamicModule).property('global').is.false;
-  });
-  it('`forFeature` by default module should be scoped', () => {
-    const dynamicModule = LoggerModule.forFeature(
-      new TestLogger() as LoggerService,
-    );
-    expect(dynamicModule).property('global').is.false;
-  });
-  it('`forRoot` module can be global', () => {
-    const dynamicModule = LoggerModule.forRoot({ global: true });
-    expect(dynamicModule).property('global').is.true;
-  });
-  it('`forFeature` can be global', () => {
-    const dynamicModule = LoggerModule.forFeature(
-      new TestLogger() as LoggerService,
-      { global: true },
-    );
-    expect(dynamicModule).property('global').is.true;
-  });
-  describe('Logger module should export', () => {
+  describe('Logger module export', () => {
     @Injectable()
     class TestProvider {
       constructor(public logger: Logger) {}
     }
-    it('logger provider', async () => {
+    it('no logger by default', async () => {
       const module = await Test.createTestingModule({
-        providers: [TestProvider],
         imports: [LoggerModule.forRoot()],
       }).compile();
-      const testProvider = module.get(TestProvider);
-      expect(testProvider).property('logger').instanceOf(Logger);
+      await expect(module.resolve(Logger)).eventually.rejected;
     });
-    it('logger provider and inject engine logger', async () => {
+    it('logger when for feature is provided', async () => {
       const module = await Test.createTestingModule({
-        providers: [TestProvider],
-        imports: [LoggerModule.forRoot()],
+        imports: [LoggerModule.forRoot(), LoggerModule.forFeature()],
       }).compile();
-      const testProvider = module.get(TestProvider);
-      expect(testProvider.logger).property('_logger').instanceOf(PinoLogger);
+      await expect(module.resolve(Logger)).eventually.instanceof(Logger);
+    });
+    it('logger provider not available in other modules by default', async () => {
+      @Module({
+        providers: [TestProvider],
+      })
+      class TestModule {}
+      await expect(
+        Test.createTestingModule({
+          imports: [LoggerModule.forRoot(), TestModule],
+        }).compile(),
+      ).eventually.rejected;
+    });
+    it('without `forRoot` logger provider will be injected without engine logger', async () => {
+      const module = await Test.createTestingModule({
+        imports: [LoggerModule.forFeature()],
+      }).compile();
+      await expect(module.resolve(Logger)).eventually.not.property('_logger');
     });
     it('transient provider and provide unique instance for each class', async () => {
       @Injectable()
@@ -71,11 +122,32 @@ describe('LoggerModule', function () {
       }
       const module = await Test.createTestingModule({
         providers: [TestProvider, SecondTestProvider],
-        imports: [LoggerModule.forRoot()],
+        imports: [LoggerModule.forRoot(), LoggerModule.forFeature()],
       }).compile();
       const testProvider = module.get(TestProvider);
       const secondTestProvider = module.get(SecondTestProvider);
       expect(testProvider.logger).not.eq(secondTestProvider.logger);
+    });
+    describe('inject in other modules', () => {
+      let module: TestingModule;
+      beforeEach(async () => {
+        @Module({
+          providers: [TestProvider],
+          imports: [LoggerModule.forFeature()],
+        })
+        class TestModule {}
+        module = await Test.createTestingModule({
+          imports: [LoggerModule.forRoot(), TestModule],
+        }).compile();
+      });
+      it('logger provider should be injected when for feature is called', async () => {
+        const testProvider = module.get(TestProvider);
+        expect(testProvider).property('logger').instanceof(Logger);
+      });
+      it('by default for feature should inject pino logger', () => {
+        const testProvider = module.get(TestProvider);
+        expect(testProvider.logger).property('_logger').instanceof(PinoLogger);
+      });
     });
   });
 });
