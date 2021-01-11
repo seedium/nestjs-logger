@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/seedium/nestjs-universal-logger/compare/1.2.0...1.2.1) (2021-01-11)
+
+
+### Bug Fixes
+
+* put dist folder into package ([11ecb48](https://github.com/seedium/nestjs-universal-logger/commit/11ecb4815947c61f9ad1d75b000dbd9af0020639))
+
 # [1.2.0](https://github.com/seedium/nestjs-universal-logger/compare/1.1.1...1.2.0) (2021-01-11)
 
 
