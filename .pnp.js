@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.0"],
-            ["husky", "npm:4.3.6"],
+            ["husky", "npm:4.3.7"],
             ["lint-staged", "npm:10.5.3"],
             ["lodash.isplainobject", "npm:4.0.6"],
             ["lodash.isstring", "npm:4.0.1"],
@@ -3476,11 +3476,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["find-versions", [
-        ["npm:3.2.0", {
-          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/find-versions-npm-3.2.0-2a87d094e9-2ddc16b426.zip/node_modules/find-versions/",
+        ["npm:4.0.0", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/find-versions-npm-4.0.0-e4bd62bace-0517412834.zip/node_modules/find-versions/",
           "packageDependencies": [
-            ["find-versions", "npm:3.2.0"],
-            ["semver-regex", "npm:2.0.0"]
+            ["find-versions", "npm:4.0.0"],
+            ["semver-regex", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }]
@@ -4161,17 +4161,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:4.3.6", {
-          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/husky-npm-4.3.6-3131736f41-3c87088878.zip/node_modules/husky/",
+        ["npm:4.3.7", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/husky-npm-4.3.7-8b04d59b66-799b1484e4.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:4.3.6"],
+            ["husky", "npm:4.3.7"],
             ["chalk", "npm:4.1.0"],
             ["ci-info", "npm:2.0.0"],
             ["compare-versions", "npm:3.6.0"],
             ["cosmiconfig", "npm:7.0.0"],
-            ["find-versions", "npm:3.2.0"],
+            ["find-versions", "npm:4.0.0"],
             ["opencollective-postinstall", "npm:2.0.3"],
-            ["pkg-dir", "npm:4.2.0"],
+            ["pkg-dir", "npm:5.0.0"],
             ["please-upgrade-node", "npm:3.2.0"],
             ["slash", "npm:3.0.0"],
             ["which-pm-runs", "npm:1.0.0"]
@@ -5606,7 +5606,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.0"],
-            ["husky", "npm:4.3.6"],
+            ["husky", "npm:4.3.7"],
             ["lint-staged", "npm:10.5.3"],
             ["lodash.isplainobject", "npm:4.0.6"],
             ["lodash.isstring", "npm:4.0.1"],
@@ -6324,6 +6324,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["find-up", "npm:4.1.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/pkg-dir-npm-5.0.0-3ba6768b42-86f6ecee17.zip/node_modules/pkg-dir/",
+          "packageDependencies": [
+            ["pkg-dir", "npm:5.0.0"],
+            ["find-up", "npm:5.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["please-upgrade-node", [
@@ -7031,10 +7039,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["semver-regex", [
-        ["npm:2.0.0", {
-          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/semver-regex-npm-2.0.0-218c804009-9b96cc8bd5.zip/node_modules/semver-regex/",
+        ["npm:3.1.2", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/semver-regex-npm-3.1.2-66d0f8130f-6a83740f3f.zip/node_modules/semver-regex/",
           "packageDependencies": [
-            ["semver-regex", "npm:2.0.0"]
+            ["semver-regex", "npm:3.1.2"]
           ],
           "linkType": "HARD",
         }]
