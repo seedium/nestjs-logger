@@ -27,7 +27,7 @@
     "format": "prettier '{lib,test}/**/*.ts' '{lib,test}/*.ts' --write",
     "test": "yarn clean && nyc --nycrc-path .nycrc.yaml mocha --reporter spec --exit 'test/**/*.spec.ts' 'test/*.spec.ts'",
     "prerelease": "yarn build",
-    "release": "release-it"
+    "release": "yarn run prerelease && release-it"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
