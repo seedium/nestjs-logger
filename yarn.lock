@@ -745,7 +745,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/commons@npm:^1, @sinonjs/commons@npm:^1.6.0, @sinonjs/commons@npm:^1.7.0, @sinonjs/commons@npm:^1.8.1":
+"@sinonjs/commons@npm:^1.6.0, @sinonjs/commons@npm:^1.7.0, @sinonjs/commons@npm:^1.8.1":
   version: 1.8.1
   resolution: "@sinonjs/commons@npm:1.8.1"
   dependencies:
@@ -763,17 +763,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/formatio@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "@sinonjs/formatio@npm:5.0.1"
-  dependencies:
-    "@sinonjs/commons": ^1
-    "@sinonjs/samsam": ^5.0.2
-  checksum: 88a5b635f8bf088a7610d92d242bea22b9f69fbbc8d3fdace1989995f7f78d463ef14ab834e549cee846b6d13c584496e53bbbde2ac711b0ccfee0a95440c5ae
-  languageName: node
-  linkType: hard
-
-"@sinonjs/samsam@npm:^5.0.2, @sinonjs/samsam@npm:^5.3.0":
+"@sinonjs/samsam@npm:^5.3.0":
   version: 5.3.0
   resolution: "@sinonjs/samsam@npm:5.3.0"
   dependencies:
@@ -4775,7 +4765,7 @@ fsevents@~2.1.2:
     release-it: 14.2.2
     rimraf: 3.0.2
     rxjs: 6.6.3
-    sinon: 9.2.2
+    sinon: 9.2.3
     sinon-chai: 3.5.0
     source-map-support: 0.5.19
     ts-node: 9.1.1
@@ -6175,18 +6165,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"sinon@npm:9.2.2":
-  version: 9.2.2
-  resolution: "sinon@npm:9.2.2"
+"sinon@npm:9.2.3":
+  version: 9.2.3
+  resolution: "sinon@npm:9.2.3"
   dependencies:
     "@sinonjs/commons": ^1.8.1
     "@sinonjs/fake-timers": ^6.0.1
-    "@sinonjs/formatio": ^5.0.1
     "@sinonjs/samsam": ^5.3.0
     diff: ^4.0.2
     nise: ^4.0.4
     supports-color: ^7.1.0
-  checksum: 349e4d79c318ebab7e4775adc6884ca36cdda6766baabbc0ff4afce59eb6b4488b22270c8dd6da0cf1c838231675ecf39e51cb9c8f4f7ee049f9177c1cf0f815
+  checksum: 7c818e8e3bd257eec8a6c3d0da310ca7331831fcf1742d3f84196979c3df5967636851fe950f9f9987a4da5090962011445df996e2455f8b837fb0938b7bd276
   languageName: node
   linkType: hard
 
