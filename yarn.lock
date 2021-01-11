@@ -4765,6 +4765,7 @@ fsevents@~2.1.2:
     release-it: 14.2.2
     rimraf: 3.0.2
     rxjs: 6.6.3
+    semver: ^7.3.4
     sinon: 9.2.3
     sinon-chai: 3.5.0
     source-map-support: 0.5.19
@@ -6092,7 +6093,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.2.1, semver@npm:^7.3.2":
+"semver@npm:^7.2.1, semver@npm:^7.3.2, semver@npm:^7.3.4":
   version: 7.3.4
   resolution: "semver@npm:7.3.4"
   dependencies:
