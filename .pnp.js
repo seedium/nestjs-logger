@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.0"],
-            ["husky", "npm:4.3.7"],
+            ["husky", "npm:4.3.8"],
             ["lint-staged", "npm:10.5.3"],
             ["lodash.isplainobject", "npm:4.0.6"],
             ["lodash.isstring", "npm:4.0.1"],
@@ -4152,10 +4152,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["husky", [
-        ["npm:4.3.7", {
-          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/husky-npm-4.3.7-8b04d59b66-799b1484e4.zip/node_modules/husky/",
+        ["npm:4.3.8", {
+          "packageLocation": "../../../../../tmp/renovate-cache/others/yarn/husky-npm-4.3.8-f7cd00e56d-1ac4fb51ff.zip/node_modules/husky/",
           "packageDependencies": [
-            ["husky", "npm:4.3.7"],
+            ["husky", "npm:4.3.8"],
             ["chalk", "npm:4.1.0"],
             ["ci-info", "npm:2.0.0"],
             ["compare-versions", "npm:3.6.0"],
@@ -5598,7 +5598,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:8.2.0"],
             ["eslint", "npm:7.17.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.0"],
-            ["husky", "npm:4.3.7"],
+            ["husky", "npm:4.3.8"],
             ["lint-staged", "npm:10.5.3"],
             ["lodash.isplainobject", "npm:4.0.6"],
             ["lodash.isstring", "npm:4.0.1"],
