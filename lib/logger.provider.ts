@@ -43,6 +43,7 @@ export class Logger implements LoggerService {
           msg: message,
           ...properties,
         },
+        context,
         stack,
       );
     } else {
@@ -69,7 +70,7 @@ export class Logger implements LoggerService {
     }
     context = context || this.context;
 
-    if (trace && level === 'error') {
+    if (level === 'error') {
       this._logger.error(message, trace, context);
     } else {
       (this._logger as Required<LoggerService>)[level](message, context);

@@ -75,6 +75,36 @@ describe('LoggerProvider', () => {
       testLogger.error(testError);
       mock.verify();
     });
+    it('can logging string error without context', () => {
+      mockTestEngineLogger
+        .expects('error')
+        .once()
+        .withExactArgs('Test', undefined, undefined);
+      testLogger.error('Test');
+      mockTestEngineLogger.verify();
+    });
+    it('when logging string error the context should output correctly', () => {
+      mockTestEngineLogger
+        .expects('error')
+        .once()
+        .withExactArgs('Test', undefined, 'Context');
+      testLogger.setContext('Context');
+      testLogger.error('Test');
+      mockTestEngineLogger.verify();
+    });
+    it('context can be overridden in error level', () => {
+      const testError = new Error('test');
+      mockTestEngineLogger.expects('error').once().withExactArgs(
+        {
+          error: testError.name,
+          msg: testError.message,
+        },
+        testError.stack,
+        'Context',
+      );
+      testLogger.error(testError, undefined, 'Context');
+      mockTestEngineLogger.verify();
+    });
   });
   describe('context', () => {
     const testContextName = 'test';
@@ -169,6 +199,7 @@ describe('LoggerProvider', () => {
           msg: testError.message,
           test: testError.test,
         },
+        undefined,
         testError.stack,
       );
     });
