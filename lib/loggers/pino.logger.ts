@@ -1,4 +1,4 @@
-import type { Logger, Level } from 'pino';
+import type { Logger, Level, Bindings } from 'pino';
 import {
   LoggerService,
   OnApplicationShutdown,
@@ -32,6 +32,29 @@ export class PinoLogger implements LoggerService, OnApplicationShutdown {
       this._logger = pino(options);
     }
   }
+  // native pino levels implementations
+  public child(bindings: Bindings): Logger {
+    return this._logger.child(bindings);
+  }
+  public fatal(_obj: unknown, _msg?: string, ..._args: unknown[]): void;
+  public fatal(_msg: string, ..._args: unknown[]): void;
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  public fatal(msgOrObject: any, ...args: unknown[]): void {
+    this._logger.fatal(msgOrObject, ...args);
+  }
+  public info(_obj: unknown, _msg?: string, ..._args: unknown[]): void;
+  public info(_msg: string, ..._args: unknown[]): void;
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  public info(msgOrObject: any, ...args: unknown[]): void {
+    this._logger.info(msgOrObject, ...args);
+  }
+  public trace(_obj: unknown, _msg?: string, ..._args: unknown[]): void;
+  public trace(_msg: string, ..._args: unknown[]): void;
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  public trace(msgOrObject: any, ...args: unknown[]): void {
+    this._logger.trace(msgOrObject, ...args);
+  }
+  // Nestjs logger service implementation
   public error(msgOrObject: unknown, trace?: string, context?: string): void {
     this.callFunction('error', msgOrObject, context, trace);
   }
@@ -93,10 +116,12 @@ export class PinoLogger implements LoggerService, OnApplicationShutdown {
   private finalHandler(
     err: Error | null,
     finalLogger: Logger,
-    evt: string,
+    evt?: string,
   ): void {
-    finalLogger.info(`${evt} caught`);
-
+    finalLogger.info('Final flushing logs to stdout...');
+    if (evt) {
+      finalLogger.info(`${evt} caught`);
+    }
     if (err) {
       finalLogger.error(err, 'error caused exit');
     }
