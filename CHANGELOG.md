@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/seedium/nestjs-universal-logger/compare/1.2.1...1.3.0) (2021-01-17)
+
+
+### Bug Fixes
+
+* fix error logging ([b71245c](https://github.com/seedium/nestjs-universal-logger/commit/b71245ccb512226f241d74b94c6c7e41f83840cc)), closes [#48](https://github.com/seedium/nestjs-universal-logger/issues/48)
+
+
+### Features
+
+* add native pino levels for injection to fastify adapter ([b4a54dc](https://github.com/seedium/nestjs-universal-logger/commit/b4a54dc2c27c5608a8e0402fbeec1531ac720322)), closes [#54](https://github.com/seedium/nestjs-universal-logger/issues/54)
+
 ## [1.2.1](https://github.com/seedium/nestjs-universal-logger/compare/1.2.0...1.2.1) (2021-01-11)
 
 
