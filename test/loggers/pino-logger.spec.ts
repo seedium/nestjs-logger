@@ -7,7 +7,16 @@ chai.use(sinonChai);
 const expect = chai.expect;
 
 describe('Pino logger', () => {
-  const levels = ['error', 'warn', 'log', 'debug', 'verbose'];
+  const levels = [
+    'error',
+    'warn',
+    'log',
+    'debug',
+    'verbose',
+    'fatal',
+    'trace',
+    'info',
+  ];
   afterEach(() => {
     sinon.restore();
   });
@@ -15,6 +24,13 @@ describe('Pino logger', () => {
     const pino = new PinoLogger();
     expect(pino).property('_logger').is.not.undefined;
     expect(pino).not.property('_finalLogger');
+  });
+  it('should return child logger', () => {
+    const pino = new PinoLogger();
+    const stubPinoChild = sinon.stub((pino as any)._logger, 'child');
+    const testOptions = { levels: 'info' };
+    pino.child(testOptions);
+    expect(stubPinoChild).calledOnceWithExactly(testOptions);
   });
   describe('logging', () => {
     let mockPinoLogger: sinon.SinonMock;
@@ -173,7 +189,8 @@ describe('Pino logger', () => {
           testEvent,
         );
         expect(stubFinalLoggerError).not.called;
-        expect(stubFinalLoggerInfo).calledOnceWithExactly(
+        expect(stubFinalLoggerInfo).calledTwice;
+        expect(stubFinalLoggerInfo.secondCall).calledWithExactly(
           `${testEvent} caught`,
         );
       });
@@ -187,6 +204,13 @@ describe('Pino logger', () => {
           testEvent,
         );
         expect(stubFinalLoggerError).calledOnceWith(testError);
+      });
+      it('if no error and no event, should just inform about final handler is working', () => {
+        (pino as any).finalHandler(null, {
+          info: stubFinalLoggerInfo,
+          error: stubFinalLoggerError,
+        });
+        expect(stubFinalLoggerInfo).calledOnce;
       });
     });
   });
