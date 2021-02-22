@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
             ["semver", "npm:7.3.4"],
-            ["sinon", "npm:9.2.3"],
+            ["sinon", "npm:9.2.4"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
             ["ts-node", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:9.1.1"],
@@ -1015,10 +1015,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@sinonjs/samsam", [
-        ["npm:5.3.0", {
-          "packageLocation": "./.yarn/cache/@sinonjs-samsam-npm-5.3.0-eb9feb77fe-03eb6ba70c.zip/node_modules/@sinonjs/samsam/",
+        ["npm:5.3.1", {
+          "packageLocation": "./.yarn/cache/@sinonjs-samsam-npm-5.3.1-deedfea087-0277cd0b71.zip/node_modules/@sinonjs/samsam/",
           "packageDependencies": [
-            ["@sinonjs/samsam", "npm:5.3.0"],
+            ["@sinonjs/samsam", "npm:5.3.1"],
             ["@sinonjs/commons", "npm:1.8.1"],
             ["lodash.get", "npm:4.4.2"],
             ["type-detect", "npm:4.0.8"]
@@ -5625,7 +5625,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
             ["semver", "npm:7.3.4"],
-            ["sinon", "npm:9.2.3"],
+            ["sinon", "npm:9.2.4"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
             ["ts-node", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:9.1.1"],
@@ -7105,13 +7105,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sinon", [
-        ["npm:9.2.3", {
-          "packageLocation": "./.yarn/cache/sinon-npm-9.2.3-dfb20a3aca-7c818e8e3b.zip/node_modules/sinon/",
+        ["npm:9.2.4", {
+          "packageLocation": "./.yarn/cache/sinon-npm-9.2.4-3c6e379b87-c285c3750a.zip/node_modules/sinon/",
           "packageDependencies": [
-            ["sinon", "npm:9.2.3"],
+            ["sinon", "npm:9.2.4"],
             ["@sinonjs/commons", "npm:1.8.1"],
             ["@sinonjs/fake-timers", "npm:6.0.1"],
-            ["@sinonjs/samsam", "npm:5.3.0"],
+            ["@sinonjs/samsam", "npm:5.3.1"],
             ["diff", "npm:4.0.2"],
             ["nise", "npm:4.0.4"],
             ["supports-color", "npm:7.2.0"]
@@ -7134,7 +7134,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.15"],
             ["@types/sinon", "npm:9.0.10"],
             ["chai", "npm:4.3.0"],
-            ["sinon", "npm:9.2.3"]
+            ["sinon", "npm:9.2.4"]
           ],
           "packagePeers": [
             "@types/chai",
