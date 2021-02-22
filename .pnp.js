@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.5"],
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.5"],
             ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.0"],
-            ["@types/chai", "npm:4.2.14"],
+            ["@types/chai", "npm:4.2.15"],
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.1"],
             ["@types/node", "npm:14.14.21"],
@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.13.0"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.13.0"],
-            ["chai", "npm:4.2.0"],
+            ["chai", "npm:4.3.0"],
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["dotenv", "npm:8.2.0"],
@@ -1073,6 +1073,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.14"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:4.2.15", {
+          "packageLocation": "./.yarn/cache/@types-chai-npm-4.2.15-b7bcad9b8e-671073ece0.zip/node_modules/@types/chai/",
+          "packageDependencies": [
+            ["@types/chai", "npm:4.2.15"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["@types/chai-as-promised", [
@@ -2016,10 +2023,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["chai", [
-        ["npm:4.2.0", {
-          "packageLocation": "./.yarn/cache/chai-npm-4.2.0-b777309e5a-91d51bbe9b.zip/node_modules/chai/",
+        ["npm:4.3.0", {
+          "packageLocation": "./.yarn/cache/chai-npm-4.3.0-21ded4e597-7b9930bb65.zip/node_modules/chai/",
           "packageDependencies": [
-            ["chai", "npm:4.2.0"],
+            ["chai", "npm:4.3.0"],
             ["assertion-error", "npm:1.1.0"],
             ["check-error", "npm:1.0.2"],
             ["deep-eql", "npm:3.0.1"],
@@ -2042,8 +2049,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/chai-as-promised-virtual-9ef04201d5/0/cache/chai-as-promised-npm-7.1.1-cdc17e4612-747b85b679.zip/node_modules/chai-as-promised/",
           "packageDependencies": [
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
-            ["@types/chai", "npm:4.2.14"],
-            ["chai", "npm:4.2.0"],
+            ["@types/chai", "npm:4.2.15"],
+            ["chai", "npm:4.3.0"],
             ["check-error", "npm:1.0.2"]
           ],
           "packagePeers": [
@@ -5589,7 +5596,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.5"],
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.5"],
             ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.0"],
-            ["@types/chai", "npm:4.2.14"],
+            ["@types/chai", "npm:4.2.15"],
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.1"],
             ["@types/node", "npm:14.14.21"],
@@ -5598,7 +5605,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.13.0"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.13.0"],
-            ["chai", "npm:4.2.0"],
+            ["chai", "npm:4.3.0"],
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["dotenv", "npm:8.2.0"],
@@ -7124,9 +7131,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/sinon-chai-virtual-fa5c92ea89/0/cache/sinon-chai-npm-3.5.0-25bcc2cb89-7be5aba73e.zip/node_modules/sinon-chai/",
           "packageDependencies": [
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.5.0"],
-            ["@types/chai", "npm:4.2.14"],
+            ["@types/chai", "npm:4.2.15"],
             ["@types/sinon", "npm:9.0.10"],
-            ["chai", "npm:4.2.0"],
+            ["chai", "npm:4.3.0"],
             ["sinon", "npm:9.2.3"]
           ],
           "packagePeers": [
