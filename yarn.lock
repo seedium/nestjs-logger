@@ -4888,7 +4888,7 @@ fsevents@~2.3.1:
     sinon-chai: 3.5.0
     source-map-support: 0.5.19
     ts-node: 9.1.1
-    ts-toolbelt: 8.4.0
+    ts-toolbelt: 9.3.12
     tslib: 2.1.0
     typescript: 4.1.5
   peerDependencies:
@@ -6859,10 +6859,10 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"ts-toolbelt@npm:8.4.0":
-  version: 8.4.0
-  resolution: "ts-toolbelt@npm:8.4.0"
-  checksum: dbc3ad2626b3ec3d0d23f800b6097deeb1895b6f07a1bc6b8c8933054255c93182d208f1b4b5a9a0a7dbb97516c5b828f4e0f1849b4b42145ba26864f49b57f9
+"ts-toolbelt@npm:9.3.12":
+  version: 9.3.12
+  resolution: "ts-toolbelt@npm:9.3.12"
+  checksum: 7845fe1337c8b4142324eb2e49982a61cd238b78646e56dd07b06bd7954ab4197880b5bf57c31af829ec2bd2c111806edf01ff1946d65fb161da0e06fa9ba6bf
   languageName: node
   linkType: hard
 
