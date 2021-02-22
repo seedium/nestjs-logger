@@ -77,7 +77,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
             ["ts-node", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:9.1.1"],
-            ["ts-toolbelt", "npm:8.4.0"],
+            ["ts-toolbelt", "npm:9.3.12"],
             ["tslib", "npm:2.1.0"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"]
           ],
@@ -5754,7 +5754,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.5.0"],
             ["source-map-support", "npm:0.5.19"],
             ["ts-node", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:9.1.1"],
-            ["ts-toolbelt", "npm:8.4.0"],
+            ["ts-toolbelt", "npm:9.3.12"],
             ["tslib", "npm:2.1.0"],
             ["typescript", "patch:typescript@npm%3A4.1.5#builtin<compat/typescript>::version=4.1.5&hash=cc6730"]
           ],
@@ -7885,10 +7885,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-toolbelt", [
-        ["npm:8.4.0", {
-          "packageLocation": "./.yarn/cache/ts-toolbelt-npm-8.4.0-f6995cd030-dbc3ad2626.zip/node_modules/ts-toolbelt/",
+        ["npm:9.3.12", {
+          "packageLocation": "./.yarn/cache/ts-toolbelt-npm-9.3.12-21d79d86ff-7845fe1337.zip/node_modules/ts-toolbelt/",
           "packageDependencies": [
-            ["ts-toolbelt", "npm:8.4.0"]
+            ["ts-toolbelt", "npm:9.3.12"]
           ],
           "linkType": "HARD",
         }]
