@@ -4884,7 +4884,7 @@ fsevents@~2.3.1:
     rxjs: 6.6.3
     semver: 7.3.4
     sinon: 9.2.4
-    sinon-chai: 3.5.0
+    sinon-chai: 3.6.0
     source-map-support: 0.5.19
     ts-node: 9.1.1
     ts-toolbelt: 9.3.12
@@ -6276,13 +6276,13 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"sinon-chai@npm:3.5.0":
-  version: 3.5.0
-  resolution: "sinon-chai@npm:3.5.0"
+"sinon-chai@npm:3.6.0":
+  version: 3.6.0
+  resolution: "sinon-chai@npm:3.6.0"
   peerDependencies:
     chai: ^4.0.0
-    sinon: ">=4.0.0 <10.0.0"
-  checksum: 7be5aba73ed36111064069c191af35cf5540540ed11be9da80cccc7c2a457e6dd0864e216dc8a78c5ab8d7769d6c697bbcee4cedc887d67239dcb2b9f740d7c7
+    sinon: ">=4.0.0 <11.0.0"
+  checksum: dec7743324c9ab98bfbf3ff1a924fa474d78f86b1a86a5edf28193fb3e8735b892b2bc397299b6cd7071ed7b3dc06d3f0ffc75ac47bf2f7ce1b1be232b3ca975
   languageName: node
   linkType: hard
 
