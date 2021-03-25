@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.15"],
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.1"],
-            ["@types/node", "npm:14.14.31"],
+            ["@types/node", "npm:14.14.35"],
             ["@types/pino", "npm:6.3.6"],
             ["@types/sinon", "npm:9.0.11"],
             ["@types/sinon-chai", "npm:3.2.5"],
@@ -1181,10 +1181,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:14.14.31", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.31-4f1a9dff64-635dc8a089.zip/node_modules/@types/node/",
+        ["npm:14.14.35", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.14.35-c55176fef6-0f6320bf53.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.14.31"]
+            ["@types/node", "npm:14.14.35"]
           ],
           "linkType": "HARD",
         }]
@@ -5770,7 +5770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.15"],
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.1"],
-            ["@types/node", "npm:14.14.31"],
+            ["@types/node", "npm:14.14.35"],
             ["@types/pino", "npm:6.3.6"],
             ["@types/sinon", "npm:9.0.11"],
             ["@types/sinon-chai", "npm:3.2.5"],
