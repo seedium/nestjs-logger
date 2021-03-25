@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.15.2"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.15.2"],
-            ["chai", "npm:4.3.3"],
+            ["chai", "npm:4.3.4"],
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["dotenv", "npm:8.2.0"],
@@ -2088,10 +2088,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["chai", [
-        ["npm:4.3.3", {
-          "packageLocation": "./.yarn/cache/chai-npm-4.3.3-fd47346d25-a2e7fb1ac3.zip/node_modules/chai/",
+        ["npm:4.3.4", {
+          "packageLocation": "./.yarn/cache/chai-npm-4.3.4-808f3b5355-ea3e6547b9.zip/node_modules/chai/",
           "packageDependencies": [
-            ["chai", "npm:4.3.3"],
+            ["chai", "npm:4.3.4"],
             ["assertion-error", "npm:1.1.0"],
             ["check-error", "npm:1.0.2"],
             ["deep-eql", "npm:3.0.1"],
@@ -2115,7 +2115,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
             ["@types/chai", "npm:4.2.15"],
-            ["chai", "npm:4.3.3"],
+            ["chai", "npm:4.3.4"],
             ["check-error", "npm:1.0.2"]
           ],
           "packagePeers": [
@@ -5768,7 +5768,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.15.2"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.15.2"],
-            ["chai", "npm:4.3.3"],
+            ["chai", "npm:4.3.4"],
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
             ["conventional-changelog-angular", "npm:5.0.12"],
             ["dotenv", "npm:8.2.0"],
@@ -7324,7 +7324,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.6.0"],
             ["@types/chai", "npm:4.2.15"],
             ["@types/sinon", "npm:9.0.10"],
-            ["chai", "npm:4.3.3"],
+            ["chai", "npm:4.3.4"],
             ["sinon", "npm:10.0.0"]
           ],
           "packagePeers": [
