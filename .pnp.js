@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.5.0"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
-            ["semver", "npm:7.3.4"],
+            ["semver", "npm:7.3.5"],
             ["sinon", "npm:10.0.0"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.6.0"],
             ["source-map-support", "npm:0.5.19"],
@@ -5787,7 +5787,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["release-it", "npm:14.5.0"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:6.6.3"],
-            ["semver", "npm:7.3.4"],
+            ["semver", "npm:7.3.5"],
             ["sinon", "npm:10.0.0"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.6.0"],
             ["source-map-support", "npm:0.5.19"],
@@ -7195,6 +7195,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/semver-npm-7.3.4-4c3baf0ead-f2c7f9aeb9.zip/node_modules/semver/",
           "packageDependencies": [
             ["semver", "npm:7.3.4"],
+            ["lru-cache", "npm:6.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.3.5", {
+          "packageLocation": "./.yarn/cache/semver-npm-7.3.5-618cf5db6a-c53624ddf4.zip/node_modules/semver/",
+          "packageDependencies": [
+            ["semver", "npm:7.3.5"],
             ["lru-cache", "npm:6.0.0"]
           ],
           "linkType": "HARD",
