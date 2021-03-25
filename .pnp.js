@@ -43,7 +43,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/common", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
-            ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.0"],
+            ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1"],
             ["@types/chai", "npm:4.2.15"],
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.2"],
@@ -987,21 +987,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@release-it/conventional-changelog", [
-        ["npm:2.0.0", {
-          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-2.0.0-deca0960e1-430c39a306.zip/node_modules/@release-it/conventional-changelog/",
+        ["npm:2.0.1", {
+          "packageLocation": "./.yarn/cache/@release-it-conventional-changelog-npm-2.0.1-33b2ad3bfe-6ac6064016.zip/node_modules/@release-it/conventional-changelog/",
           "packageDependencies": [
-            ["@release-it/conventional-changelog", "npm:2.0.0"]
+            ["@release-it/conventional-changelog", "npm:2.0.1"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.0", {
-          "packageLocation": "./.yarn/$$virtual/@release-it-conventional-changelog-virtual-0b49b1fd17/0/cache/@release-it-conventional-changelog-npm-2.0.0-deca0960e1-430c39a306.zip/node_modules/@release-it/conventional-changelog/",
+        ["virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1", {
+          "packageLocation": "./.yarn/$$virtual/@release-it-conventional-changelog-virtual-bcdd0b11ec/0/cache/@release-it-conventional-changelog-npm-2.0.1-33b2ad3bfe-6ac6064016.zip/node_modules/@release-it/conventional-changelog/",
           "packageDependencies": [
-            ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.0"],
+            ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1"],
             ["@types/release-it", null],
             ["concat-stream", "npm:2.0.0"],
             ["conventional-changelog", "npm:3.1.24"],
-            ["conventional-recommended-bump", "npm:6.0.11"],
+            ["conventional-recommended-bump", "npm:6.1.0"],
             ["prepend-file", "npm:2.0.0"],
             ["release-it", "npm:14.5.0"]
           ],
@@ -2651,15 +2651,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["conventional-recommended-bump", [
-        ["npm:6.0.11", {
-          "packageLocation": "./.yarn/cache/conventional-recommended-bump-npm-6.0.11-922499259d-e81e83c60f.zip/node_modules/conventional-recommended-bump/",
+        ["npm:6.1.0", {
+          "packageLocation": "./.yarn/cache/conventional-recommended-bump-npm-6.1.0-18a6db0ce9-ff9483c01d.zip/node_modules/conventional-recommended-bump/",
           "packageDependencies": [
-            ["conventional-recommended-bump", "npm:6.0.11"],
+            ["conventional-recommended-bump", "npm:6.1.0"],
             ["concat-stream", "npm:2.0.0"],
             ["conventional-changelog-preset-loader", "npm:2.3.4"],
             ["conventional-commits-filter", "npm:2.0.7"],
             ["conventional-commits-parser", "npm:3.2.0"],
-            ["git-raw-commits", "npm:2.0.0"],
+            ["git-raw-commits", "npm:2.0.10"],
             ["git-semver-tags", "npm:4.1.1"],
             ["meow", "npm:8.1.0"],
             ["q", "npm:1.5.1"]
@@ -3884,6 +3884,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["meow", "npm:4.0.1"],
             ["split2", "npm:2.2.0"],
             ["through2", "npm:2.0.5"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:2.0.10", {
+          "packageLocation": "./.yarn/cache/git-raw-commits-npm-2.0.10-66e3a843dd-8c8769db98.zip/node_modules/git-raw-commits/",
+          "packageDependencies": [
+            ["git-raw-commits", "npm:2.0.10"],
+            ["dargs", "npm:7.0.0"],
+            ["lodash", "npm:4.17.20"],
+            ["meow", "npm:8.1.0"],
+            ["split2", "npm:3.2.2"],
+            ["through2", "npm:4.0.2"]
           ],
           "linkType": "HARD",
         }],
@@ -5773,7 +5785,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/common", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
-            ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.0"],
+            ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1"],
             ["@types/chai", "npm:4.2.15"],
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.2"],
@@ -7491,6 +7503,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["split2", "npm:2.2.0"],
             ["through2", "npm:2.0.5"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.2.2", {
+          "packageLocation": "./.yarn/cache/split2-npm-3.2.2-4ccd21b4f7-04bf20af25.zip/node_modules/split2/",
+          "packageDependencies": [
+            ["split2", "npm:3.2.2"],
+            ["readable-stream", "npm:3.6.0"]
           ],
           "linkType": "HARD",
         }]
