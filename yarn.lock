@@ -4923,7 +4923,7 @@ fsevents@~2.3.1:
     rimraf: 3.0.2
     rxjs: 6.6.3
     semver: 7.3.4
-    sinon: 9.2.4
+    sinon: 10.0.0
     sinon-chai: 3.6.0
     source-map-support: 0.5.19
     ts-node: 9.1.1
@@ -4943,16 +4943,16 @@ fsevents@~2.3.1:
   languageName: unknown
   linkType: soft
 
-"nise@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "nise@npm:4.0.4"
+"nise@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "nise@npm:4.1.0"
   dependencies:
     "@sinonjs/commons": ^1.7.0
     "@sinonjs/fake-timers": ^6.0.0
     "@sinonjs/text-encoding": ^0.7.1
     just-extend: ^4.0.2
     path-to-regexp: ^1.7.0
-  checksum: 5ead54f4f35680b121f623099ccaee4bde3208167c11c28ccebcc1810ff6053f4e8093fcbfefbc7fa6d12e0a7a2488901da976127fbda2252a999c623543968e
+  checksum: 87b37725d9e0e6dc951caa40685f8726d028ac48ca87e71773cbb705e2736e084cc3087530a92b9ebe87163212ee477d37318875984b1093f79bae600ce6d7c4
   languageName: node
   linkType: hard
 
@@ -6336,17 +6336,17 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"sinon@npm:9.2.4":
-  version: 9.2.4
-  resolution: "sinon@npm:9.2.4"
+"sinon@npm:10.0.0":
+  version: 10.0.0
+  resolution: "sinon@npm:10.0.0"
   dependencies:
     "@sinonjs/commons": ^1.8.1
     "@sinonjs/fake-timers": ^6.0.1
     "@sinonjs/samsam": ^5.3.1
     diff: ^4.0.2
-    nise: ^4.0.4
+    nise: ^4.1.0
     supports-color: ^7.1.0
-  checksum: c285c3750ab403331a1eba390cea139b1c91003648f254d64e14b80d9a38c3ccf788e066d084ecdc7da6de29d279967e25eacdb4e5bc44840d30262f73a0c201
+  checksum: 75996724f971b015956b34b331fe2ed1af313404b7d44985468f8145e1eed3a8400a94c117857b550f79ad86be69349621ae07e06331c3b7ea9063b34687f540
   languageName: node
   linkType: hard
 
