@@ -65,7 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:8.3.0"],
             ["nyc", "npm:15.1.0"],
-            ["pino", "npm:6.11.1"],
+            ["pino", "npm:6.11.2"],
             ["prettier", "npm:2.2.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -5780,7 +5780,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:8.3.0"],
             ["nyc", "npm:15.1.0"],
-            ["pino", "npm:6.11.1"],
+            ["pino", "npm:6.11.2"],
             ["prettier", "npm:2.2.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -6466,10 +6466,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["pino", [
-        ["npm:6.11.1", {
-          "packageLocation": "./.yarn/cache/pino-npm-6.11.1-3e4c379a9f-ba8a3a6336.zip/node_modules/pino/",
+        ["npm:6.11.2", {
+          "packageLocation": "./.yarn/cache/pino-npm-6.11.2-b9cd6ecb15-e854d37d65.zip/node_modules/pino/",
           "packageDependencies": [
-            ["pino", "npm:6.11.1"],
+            ["pino", "npm:6.11.2"],
             ["fast-redact", "npm:3.0.0"],
             ["fast-safe-stringify", "npm:2.0.7"],
             ["flatstr", "npm:1.0.12"],
