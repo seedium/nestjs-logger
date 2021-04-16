@@ -66,6 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:8.3.2"],
             ["nyc", "npm:15.1.0"],
             ["pino", "npm:6.11.2"],
+            ["pinst", "npm:2.0.0"],
             ["prettier", "npm:2.2.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -2985,6 +2986,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["detect-indent", [
+        ["npm:6.0.0", {
+          "packageLocation": "./.yarn/cache/detect-indent-npm-6.0.0-9f7d77378e-ad06194141.zip/node_modules/detect-indent/",
+          "packageDependencies": [
+            ["detect-indent", "npm:6.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["diff", [
         ["npm:4.0.2", {
           "packageLocation": "./.yarn/cache/diff-npm-4.0.2-73133c7102-81b5cd7ddd.zip/node_modules/diff/",
@@ -5173,6 +5183,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["strip-bom", "npm:3.0.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:6.2.0", {
+          "packageLocation": "./.yarn/cache/load-json-file-npm-6.2.0-516f143724-88a7187416.zip/node_modules/load-json-file/",
+          "packageDependencies": [
+            ["load-json-file", "npm:6.2.0"],
+            ["graceful-fs", "npm:4.2.4"],
+            ["parse-json", "npm:5.1.0"],
+            ["strip-bom", "npm:4.0.0"],
+            ["type-fest", "npm:0.6.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["locate-path", [
@@ -5268,6 +5289,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lodash.isstring-npm-4.0.1-721fee791c-20c46960b7.zip/node_modules/lodash.isstring/",
           "packageDependencies": [
             ["lodash.isstring", "npm:4.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lodash.mapkeys", [
+        ["npm:4.6.0", {
+          "packageLocation": "./.yarn/cache/lodash.mapkeys-npm-4.6.0-ddec96aa53-4a3a9f6087.zip/node_modules/lodash.mapkeys/",
+          "packageDependencies": [
+            ["lodash.mapkeys", "npm:4.6.0"]
           ],
           "linkType": "HARD",
         }]
@@ -5444,6 +5474,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["read-pkg-up", "npm:3.0.0"],
             ["redent", "npm:2.0.0"],
             ["trim-newlines", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.0", {
+          "packageLocation": "./.yarn/cache/meow-npm-5.0.0-d4fc9726f1-c6093078a0.zip/node_modules/meow/",
+          "packageDependencies": [
+            ["meow", "npm:5.0.0"],
+            ["camelcase-keys", "npm:4.2.0"],
+            ["decamelize-keys", "npm:1.1.0"],
+            ["loud-rejection", "npm:1.6.0"],
+            ["minimist-options", "npm:3.0.2"],
+            ["normalize-package-data", "npm:2.5.0"],
+            ["read-pkg-up", "npm:3.0.0"],
+            ["redent", "npm:2.0.0"],
+            ["trim-newlines", "npm:2.0.0"],
+            ["yargs-parser", "npm:10.1.0"]
           ],
           "linkType": "HARD",
         }],
@@ -5780,6 +5826,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mocha", "npm:8.3.2"],
             ["nyc", "npm:15.1.0"],
             ["pino", "npm:6.11.2"],
+            ["pinst", "npm:2.0.0"],
             ["prettier", "npm:2.2.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -6475,6 +6522,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/pino-std-serializers-npm-3.1.0-3d5bbcfa09-9e5e8e9f48.zip/node_modules/pino-std-serializers/",
           "packageDependencies": [
             ["pino-std-serializers", "npm:3.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["pinst", [
+        ["npm:2.0.0", {
+          "packageLocation": "./.yarn/cache/pinst-npm-2.0.0-70153c0b05-931662c7fd.zip/node_modules/pinst/",
+          "packageDependencies": [
+            ["pinst", "npm:2.0.0"],
+            ["load-json-file", "npm:6.2.0"],
+            ["lodash.mapkeys", "npm:4.6.0"],
+            ["meow", "npm:5.0.0"],
+            ["write-json-file", "npm:4.3.0"]
           ],
           "linkType": "HARD",
         }]
@@ -7339,6 +7399,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sonic-boom", "npm:1.3.0"],
             ["atomic-sleep", "npm:1.0.0"],
             ["flatstr", "npm:1.0.12"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["sort-keys", [
+        ["npm:4.2.0", {
+          "packageLocation": "./.yarn/cache/sort-keys-npm-4.2.0-bf52ceef80-630aee4071.zip/node_modules/sort-keys/",
+          "packageDependencies": [
+            ["sort-keys", "npm:4.2.0"],
+            ["is-plain-obj", "npm:2.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -8367,6 +8437,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["write-json-file", [
+        ["npm:4.3.0", {
+          "packageLocation": "./.yarn/cache/write-json-file-npm-4.3.0-89a21c4468-0803c58565.zip/node_modules/write-json-file/",
+          "packageDependencies": [
+            ["write-json-file", "npm:4.3.0"],
+            ["detect-indent", "npm:6.0.0"],
+            ["graceful-fs", "npm:4.2.4"],
+            ["is-plain-obj", "npm:2.1.0"],
+            ["make-dir", "npm:3.1.0"],
+            ["sort-keys", "npm:4.2.0"],
+            ["write-file-atomic", "npm:3.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["xdg-basedir", [
         ["npm:4.0.0", {
           "packageLocation": "./.yarn/cache/xdg-basedir-npm-4.0.0-ed08d380e2-928953cb7d.zip/node_modules/xdg-basedir/",
@@ -8461,6 +8546,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["yargs-parser", [
+        ["npm:10.1.0", {
+          "packageLocation": "./.yarn/cache/yargs-parser-npm-10.1.0-04b00264c9-fc775037dc.zip/node_modules/yargs-parser/",
+          "packageDependencies": [
+            ["yargs-parser", "npm:10.1.0"],
+            ["camelcase", "npm:4.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:18.1.3", {
           "packageLocation": "./.yarn/cache/yargs-parser-npm-18.1.3-0ba9c4f088-3387172167.zip/node_modules/yargs-parser/",
           "packageDependencies": [
