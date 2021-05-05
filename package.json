@@ -51,7 +51,7 @@
     "chai": "4.3.4",
     "chai-as-promised": "7.1.1",
     "conventional-changelog-angular": "5.0.12",
-    "dotenv": "8.2.0",
+    "dotenv": "8.6.0",
     "eslint": "7.24.0",
     "eslint-config-prettier": "8.2.0",
     "husky": "6.0.0",
