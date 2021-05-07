@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.41"],
-            ["@types/pino", "npm:6.3.7"],
+            ["@types/pino", "npm:6.3.8"],
             ["@types/sinon", "npm:10.0.0"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.22.0"],
@@ -65,7 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:8.3.2"],
             ["nyc", "npm:15.1.0"],
-            ["pino", "npm:6.11.2"],
+            ["pino", "npm:6.11.3"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.2.1"],
             ["proxyquire", "npm:2.1.3"],
@@ -1211,6 +1211,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.7-9bd1276b6f-5c60982141.zip/node_modules/@types/pino/",
           "packageDependencies": [
             ["@types/pino", "npm:6.3.7"],
+            ["@types/node", "npm:14.14.16"],
+            ["@types/pino-pretty", "npm:4.7.0"],
+            ["@types/pino-std-serializers", "npm:2.4.1"],
+            ["@types/sonic-boom", "npm:0.7.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:6.3.8", {
+          "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.8-fe608df63f-f3cf2324ff.zip/node_modules/@types/pino/",
+          "packageDependencies": [
+            ["@types/pino", "npm:6.3.8"],
             ["@types/node", "npm:14.14.16"],
             ["@types/pino-pretty", "npm:4.7.0"],
             ["@types/pino-std-serializers", "npm:2.4.1"],
@@ -5763,7 +5774,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai-as-promised", "npm:7.1.3"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.41"],
-            ["@types/pino", "npm:6.3.7"],
+            ["@types/pino", "npm:6.3.8"],
             ["@types/sinon", "npm:10.0.0"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.22.0"],
@@ -5780,7 +5791,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:8.3.2"],
             ["nyc", "npm:15.1.0"],
-            ["pino", "npm:6.11.2"],
+            ["pino", "npm:6.11.3"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.2.1"],
             ["proxyquire", "npm:2.1.3"],
@@ -6458,15 +6469,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["pino", [
-        ["npm:6.11.2", {
-          "packageLocation": "./.yarn/cache/pino-npm-6.11.2-b9cd6ecb15-e854d37d65.zip/node_modules/pino/",
+        ["npm:6.11.3", {
+          "packageLocation": "./.yarn/cache/pino-npm-6.11.3-63b6174ef5-c6fa52d31b.zip/node_modules/pino/",
           "packageDependencies": [
-            ["pino", "npm:6.11.2"],
+            ["pino", "npm:6.11.3"],
             ["fast-redact", "npm:3.0.0"],
             ["fast-safe-stringify", "npm:2.0.7"],
             ["flatstr", "npm:1.0.12"],
             ["pino-std-serializers", "npm:3.1.0"],
-            ["quick-format-unescaped", "npm:4.0.1"],
+            ["quick-format-unescaped", "npm:4.0.3"],
             ["sonic-boom", "npm:1.3.0"]
           ],
           "linkType": "HARD",
@@ -6656,10 +6667,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["quick-format-unescaped", [
-        ["npm:4.0.1", {
-          "packageLocation": "./.yarn/cache/quick-format-unescaped-npm-4.0.1-54b775e975-0935e55e0a.zip/node_modules/quick-format-unescaped/",
+        ["npm:4.0.3", {
+          "packageLocation": "./.yarn/cache/quick-format-unescaped-npm-4.0.3-5c9b4670f7-08bbbe4937.zip/node_modules/quick-format-unescaped/",
           "packageDependencies": [
-            ["quick-format-unescaped", "npm:4.0.1"]
+            ["quick-format-unescaped", "npm:4.0.3"]
           ],
           "linkType": "HARD",
         }]
