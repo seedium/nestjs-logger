@@ -943,7 +943,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pino@npm:*, @types/pino@npm:6.3.7":
+"@types/pino@npm:*":
   version: 6.3.7
   resolution: "@types/pino@npm:6.3.7"
   dependencies:
@@ -952,6 +952,18 @@ __metadata:
     "@types/pino-std-serializers": "*"
     "@types/sonic-boom": "*"
   checksum: 5c60982141a1a168386f434d41becd7aaccfd875012a260cd3599bf4483915f37329cc7b1c7c41924fd403cbcecb843732089c562ab8398ea4cd2bd0dbbbd5b2
+  languageName: node
+  linkType: hard
+
+"@types/pino@npm:6.3.8":
+  version: 6.3.8
+  resolution: "@types/pino@npm:6.3.8"
+  dependencies:
+    "@types/node": "*"
+    "@types/pino-pretty": "*"
+    "@types/pino-std-serializers": "*"
+    "@types/sonic-boom": "*"
+  checksum: f3cf2324ff72c4472c34dc5019615abfbeb86331a79ed401a135c0d9a1375f560e86d517c18019666d0c1eff2e6cf076925bfa4de836c865214f25f75784f3d4
   languageName: node
   linkType: hard
 
@@ -4907,7 +4919,7 @@ fsevents@~2.3.1:
     "@types/chai-as-promised": 7.1.3
     "@types/mocha": 8.2.2
     "@types/node": 14.14.41
-    "@types/pino": 6.3.7
+    "@types/pino": 6.3.8
     "@types/sinon": 10.0.0
     "@types/sinon-chai": 3.2.5
     "@typescript-eslint/eslint-plugin": 4.22.0

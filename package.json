@@ -82,7 +82,7 @@
     "rxjs": "^6.0.0"
   },
   "optionalDependencies": {
-    "@types/pino": "6.3.7",
+    "@types/pino": "6.3.8",
     "pino": "6.11.2"
   },
   "dependencies": {
