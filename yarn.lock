@@ -4798,9 +4798,9 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"mocha@npm:8.3.2":
-  version: 8.3.2
-  resolution: "mocha@npm:8.3.2"
+"mocha@npm:8.4.0":
+  version: 8.4.0
+  resolution: "mocha@npm:8.4.0"
   dependencies:
     "@ungap/promise-all-settled": 1.1.2
     ansi-colors: 4.1.1
@@ -4830,7 +4830,7 @@ fsevents@~2.3.1:
   bin:
     _mocha: bin/_mocha
     mocha: bin/mocha
-  checksum: ac4f359cf4dbd3a01202d0a5ef06533b9513ae293a411b3c0743dbeff03ffcfe444636127cc103634e07c932ec2eda104c2e1e8e259d16efd7e07a0a900eb2f4
+  checksum: 51744733d86b4a629846f0cb5f8e2aa3d9c901712f5fb4e3fb5ad49954c3322178abb56854e158456a38828762e0f6192c09ccfc5235650c486493ed2f77a20c
   languageName: node
   linkType: hard
 
@@ -4922,7 +4922,7 @@ fsevents@~2.3.1:
     lint-staged: 10.5.4
     lodash.isplainobject: 4.0.6
     lodash.isstring: 4.0.1
-    mocha: 8.3.2
+    mocha: 8.4.0
     nyc: 15.1.0
     pino: 6.11.2
     pinst: 2.1.6
