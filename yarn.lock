@@ -837,12 +837,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chai-as-promised@npm:7.1.3":
-  version: 7.1.3
-  resolution: "@types/chai-as-promised@npm:7.1.3"
+"@types/chai-as-promised@npm:7.1.4":
+  version: 7.1.4
+  resolution: "@types/chai-as-promised@npm:7.1.4"
   dependencies:
     "@types/chai": "*"
-  checksum: 71f383b20c556bf227b4e117f721fb7d92dcdaeefe7c352b301d59e0eca9dc2c72538c0f2829da62ba06b2c26002a730c5b7137b43aaac76f7c9ff8fdc9847f2
+  checksum: 8bfb9d8c79c85cf6061b64ead67bfe5534f2ef8c50ad80e804293dd06d688b3f57f99624cedbf80a6257a1abaa16949fbf7e9ab9590ed1baa1373a605af4d772
   languageName: node
   linkType: hard
 
@@ -4904,7 +4904,7 @@ fsevents@~2.3.1:
     "@nestjs/testing": 7.6.15
     "@release-it/conventional-changelog": 2.0.1
     "@types/chai": 4.2.17
-    "@types/chai-as-promised": 7.1.3
+    "@types/chai-as-promised": 7.1.4
     "@types/mocha": 8.2.2
     "@types/node": 14.14.41
     "@types/pino": 6.3.7

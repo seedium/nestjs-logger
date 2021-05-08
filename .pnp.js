@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1"],
             ["@types/chai", "npm:4.2.17"],
-            ["@types/chai-as-promised", "npm:7.1.3"],
+            ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.41"],
             ["@types/pino", "npm:6.3.7"],
@@ -1117,10 +1117,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/chai-as-promised", [
-        ["npm:7.1.3", {
-          "packageLocation": "./.yarn/cache/@types-chai-as-promised-npm-7.1.3-7aba7c89a2-71f383b20c.zip/node_modules/@types/chai-as-promised/",
+        ["npm:7.1.4", {
+          "packageLocation": "./.yarn/cache/@types-chai-as-promised-npm-7.1.4-0ab573c373-8bfb9d8c79.zip/node_modules/@types/chai-as-promised/",
           "packageDependencies": [
-            ["@types/chai-as-promised", "npm:7.1.3"],
+            ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/chai", "npm:4.2.14"]
           ],
           "linkType": "HARD",
@@ -5760,7 +5760,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1"],
             ["@types/chai", "npm:4.2.17"],
-            ["@types/chai-as-promised", "npm:7.1.3"],
+            ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.41"],
             ["@types/pino", "npm:6.3.7"],
