@@ -56,7 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai", "npm:4.3.4"],
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
             ["conventional-changelog-angular", "npm:5.0.12"],
-            ["dotenv", "npm:8.2.0"],
+            ["dotenv", "npm:9.0.2"],
             ["eslint", "npm:7.24.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:8.2.0"],
             ["husky", "npm:6.0.0"],
@@ -3033,10 +3033,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["dotenv", [
-        ["npm:8.2.0", {
-          "packageLocation": "./.yarn/cache/dotenv-npm-8.2.0-6b21df4d37-16cb89cbd7.zip/node_modules/dotenv/",
+        ["npm:9.0.2", {
+          "packageLocation": "./.yarn/cache/dotenv-npm-9.0.2-fd127dfe81-062a31a2fd.zip/node_modules/dotenv/",
           "packageDependencies": [
-            ["dotenv", "npm:8.2.0"]
+            ["dotenv", "npm:9.0.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5771,7 +5771,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["chai", "npm:4.3.4"],
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
             ["conventional-changelog-angular", "npm:5.0.12"],
-            ["dotenv", "npm:8.2.0"],
+            ["dotenv", "npm:9.0.2"],
             ["eslint", "npm:7.24.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:8.2.0"],
             ["husky", "npm:6.0.0"],
