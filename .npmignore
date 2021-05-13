@@ -1,29 +1,4 @@
-test
-lib
-coverage
-.nyc_output
-.github
-.circleci
-.idea
-
-.commitlintrc.json
-.editorconfig
-.eslintignore
-.eslintrc.spec.yaml
-.eslintrc.yaml
-.gitignore
-.huskyrc.js
-.lintstagedrc
-.nycrc.yaml
-.prettierignore
-.prettierrc.yaml
-.release-it.yml
-renovate.json
-tsconfig.json
-tsconfig.spec.json
-
-# ignore the .ts files
-*.ts
-
-# include the .d.ts files
-!*.d.ts
+*
+!dist/**/*
+!index.js
+!index.d.ts
