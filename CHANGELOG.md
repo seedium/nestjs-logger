@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/seedium/nestjs-universal-logger/compare/1.3.2...1.3.3) (2021-05-13)
+
+
+### Bug Fixes
+
+* fix package size ([0b18790](https://github.com/seedium/nestjs-universal-logger/commit/0b1879021080bea5a87075e11e03e7659d0bf266))
+
 * fix(): remove dynamic load pino package (307090b)
 * chore(): fix yarn lock (39e3b4a)
 * chore(): move pino from option dependency to direct (a901a26)
