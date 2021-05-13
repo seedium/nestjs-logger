@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/seedium/nestjs-universal-logger/compare/1.3.3...1.3.4) (2021-05-13)
+
+
+### Bug Fixes
+
+* serve pino types with package ([f929d8e](https://github.com/seedium/nestjs-universal-logger/commit/f929d8e581d73df20d09bf90806ba1705aa57988))
+
 ## [1.3.3](https://github.com/seedium/nestjs-universal-logger/compare/1.3.2...1.3.3) (2021-05-13)
 
 
