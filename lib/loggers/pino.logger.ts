@@ -1,10 +1,9 @@
-import type { Logger, Level, Bindings } from 'pino';
+import * as pino from 'pino';
 import {
   LoggerService,
   OnApplicationShutdown,
   Injectable,
 } from '@nestjs/common';
-import { loadPackage } from '@nestjs/common/utils/load-package.util';
 import type { O } from 'ts-toolbelt';
 import * as isString from 'lodash.isstring';
 import * as isPlainObject from 'lodash.isplainobject';
@@ -13,9 +12,8 @@ import { PinoOptions, PinoEventHandler } from '../interfaces';
 @Injectable()
 export class PinoLogger implements LoggerService, OnApplicationShutdown {
   private readonly _finalLogger: PinoEventHandler;
-  private readonly _logger: Logger;
+  private readonly _logger: pino.Logger;
   constructor(options?: PinoOptions) {
-    const pino = loadPackage('pino', 'LoggerModule', () => require('pino'));
     if (options?.extremeMode?.enabled) {
       const extremeModeTick = options.extremeMode.tick || 10000;
       this._logger = pino(
@@ -33,7 +31,7 @@ export class PinoLogger implements LoggerService, OnApplicationShutdown {
     }
   }
   // native pino levels implementations
-  public child(bindings: Bindings): Logger {
+  public child(bindings: pino.Bindings): pino.Logger {
     return this._logger.child(bindings);
   }
   public fatal(_obj: unknown, _msg?: string, ..._args: unknown[]): void;
@@ -76,7 +74,7 @@ export class PinoLogger implements LoggerService, OnApplicationShutdown {
     }
   }
   protected callFunction(
-    level: Level,
+    level: pino.Level,
     message: unknown,
     context?: string,
     trace?: string,
@@ -115,7 +113,7 @@ export class PinoLogger implements LoggerService, OnApplicationShutdown {
   }
   private finalHandler(
     err: Error | null,
-    finalLogger: Logger,
+    finalLogger: pino.Logger,
     evt?: string,
   ): void {
     finalLogger.info('Final flushing logs to stdout...');
