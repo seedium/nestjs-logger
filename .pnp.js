@@ -1206,17 +1206,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/pino", [
-        ["npm:6.3.7", {
-          "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.7-9bd1276b6f-5c60982141.zip/node_modules/@types/pino/",
-          "packageDependencies": [
-            ["@types/pino", "npm:6.3.7"],
-            ["@types/node", "npm:14.14.16"],
-            ["@types/pino-pretty", "npm:4.7.0"],
-            ["@types/pino-std-serializers", "npm:2.4.1"],
-            ["@types/sonic-boom", "npm:0.7.0"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:6.3.8", {
           "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.8-fe608df63f-f3cf2324ff.zip/node_modules/@types/pino/",
           "packageDependencies": [
@@ -1234,7 +1223,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-pino-pretty-npm-4.7.0-cecf347896-083322f62f.zip/node_modules/@types/pino-pretty/",
           "packageDependencies": [
             ["@types/pino-pretty", "npm:4.7.0"],
-            ["@types/pino", "npm:6.3.7"]
+            ["@types/pino", "npm:6.3.8"]
           ],
           "linkType": "HARD",
         }]
