@@ -1,3 +1,7 @@
+* fix(): remove dynamic load pino package (307090b)
+* chore(): fix yarn lock (39e3b4a)
+* chore(): move pino from option dependency to direct (a901a26)
+
 ## [1.3.1](https://github.com/seedium/nestjs-universal-logger/compare/1.3.0...1.3.1) (2021-05-13)
 
 
