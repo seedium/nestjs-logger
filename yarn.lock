@@ -779,12 +779,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:^7.0.4":
-  version: 7.0.5
-  resolution: "@sinonjs/fake-timers@npm:7.0.5"
+"@sinonjs/fake-timers@npm:^7.1.0":
+  version: 7.1.2
+  resolution: "@sinonjs/fake-timers@npm:7.1.2"
   dependencies:
     "@sinonjs/commons": ^1.7.0
-  checksum: 5cc43301d3d46affdace077854ecffd299b80ab3a438bf34f21b6d6d27e0be636ba475397d12fd5b8561bd30679d0597f9d7e8b5e0c82ad57a6c9b49e366e9b4
+  checksum: 5ce48e40db14d7e1419bae287b84559133d580cb56130b51d7479dff318bfafed87531f8b48f618f07e3c9a6113c9e3f00286805d55de64986b9cccb8eb6d5cf
   languageName: node
   linkType: hard
 
@@ -982,12 +982,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sinon@npm:10.0.0":
-  version: 10.0.0
-  resolution: "@types/sinon@npm:10.0.0"
+"@types/sinon@npm:10.0.2":
+  version: 10.0.2
+  resolution: "@types/sinon@npm:10.0.2"
   dependencies:
-    "@sinonjs/fake-timers": ^7.0.4
-  checksum: 4263b63f316b549724d0ae77b68e5155d0859a67fc61facfd64954bb183b27d0d5306a31471d4270e417e276537f68259e497e940354f4d5a381e6821673913a
+    "@sinonjs/fake-timers": ^7.1.0
+  checksum: 44d149b0ba4ebfbadd7452e31edb35aab782d74bb542a808e5b0cc72f40fd2db6b4179bb97a79d5e2dc1b870823a395cd21349037a7af336810c1662ee9f076f
   languageName: node
   linkType: hard
 
@@ -4921,7 +4921,7 @@ fsevents@~2.3.1:
     "@types/mocha": 8.2.2
     "@types/node": 14.14.45
     "@types/pino": 6.3.8
-    "@types/sinon": 10.0.0
+    "@types/sinon": 10.0.2
     "@types/sinon-chai": 3.2.5
     "@typescript-eslint/eslint-plugin": 4.23.0
     "@typescript-eslint/parser": 4.23.0
