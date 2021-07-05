@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.6.2"],
             ["rimraf", "npm:3.0.2"],
-            ["rxjs", "npm:7.0.1"],
+            ["rxjs", "npm:7.2.0"],
             ["semver", "npm:7.3.5"],
             ["sinon", "npm:10.0.0"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.6.0"],
@@ -620,7 +620,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["class-validator", null],
             ["iterare", "npm:1.2.1"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["rxjs", "npm:7.0.1"],
+            ["rxjs", "npm:7.2.0"],
             ["tslib", "npm:2.1.0"],
             ["uuid", "npm:8.3.2"]
           ],
@@ -641,14 +641,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.6.15", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-c3dc9d46ea/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.6.15-d43e24d976-87326cdfdc.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.6.15"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-c3dc9d46ea/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-c3dc9d46ea/0/cache/@nestjs-core-npm-7.6.15-d43e24d976-87326cdfdc.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/common", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
@@ -667,7 +667,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["object-hash", "npm:2.1.1"],
             ["path-to-regexp", "npm:3.2.0"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["rxjs", "npm:7.0.1"],
+            ["rxjs", "npm:7.2.0"],
             ["tslib", "npm:2.1.0"],
             ["uuid", "npm:8.3.2"]
           ],
@@ -5798,7 +5798,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.6.2"],
             ["rimraf", "npm:3.0.2"],
-            ["rxjs", "npm:7.0.1"],
+            ["rxjs", "npm:7.2.0"],
             ["semver", "npm:7.3.5"],
             ["sinon", "npm:10.0.0"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.6.0"],
@@ -7146,10 +7146,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:7.0.1", {
-          "packageLocation": "./.yarn/cache/rxjs-npm-7.0.1-0b1fb438c1-5268539238.zip/node_modules/rxjs/",
+        ["npm:7.2.0", {
+          "packageLocation": "./.yarn/cache/rxjs-npm-7.2.0-be16b41b18-45b46a5adc.zip/node_modules/rxjs/",
           "packageDependencies": [
-            ["rxjs", "npm:7.0.1"],
+            ["rxjs", "npm:7.2.0"],
             ["tslib", "npm:2.1.0"]
           ],
           "linkType": "HARD",

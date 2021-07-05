@@ -64,7 +64,7 @@
     "reflect-metadata": "0.1.13",
     "release-it": "14.6.2",
     "rimraf": "3.0.2",
-    "rxjs": "7.0.1",
+    "rxjs": "7.2.0",
     "semver": "7.3.5",
     "sinon": "10.0.0",
     "sinon-chai": "3.6.0",
@@ -78,7 +78,7 @@
     "@nestjs/common": "^6.0.0 || ^7.0.0",
     "@nestjs/core": "^6.0.0 || ^7.0.0",
     "reflect-metadata": "^0.1.12",
-    "rxjs": "^6.0.0"
+    "rxjs": "^6.0.0 || ^7.0.0"
   },
   "dependencies": {
     "@types/pino": "6.3.8",
