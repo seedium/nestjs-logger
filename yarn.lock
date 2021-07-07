@@ -889,10 +889,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mocha@npm:8.2.2":
-  version: 8.2.2
-  resolution: "@types/mocha@npm:8.2.2"
-  checksum: 3455211b134b0cfcfc71fee2d4f22a6ac3e313a93bf6c0cd3519c1e85653ffb8c9bb68dcff083b8e9e15b4ea3cb4f50d9916709946c082f072807aeba747575b
+"@types/mocha@npm:8.2.3":
+  version: 8.2.3
+  resolution: "@types/mocha@npm:8.2.3"
+  checksum: 5cba26124eb9d6b9b2fab66111488a54e6254162bac855282cb46f1467c5c4debe78ddeba15ab2264d5e4669fbfd403e433b6363106d2dfbe122d660c1e298e2
   languageName: node
   linkType: hard
 
@@ -4918,7 +4918,7 @@ fsevents@~2.3.1:
     "@release-it/conventional-changelog": 2.0.1
     "@types/chai": 4.2.18
     "@types/chai-as-promised": 7.1.4
-    "@types/mocha": 8.2.2
+    "@types/mocha": 8.2.3
     "@types/node": 14.14.45
     "@types/pino": 6.3.8
     "@types/sinon": 10.0.0
