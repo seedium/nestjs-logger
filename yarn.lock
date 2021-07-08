@@ -852,10 +852,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chai@npm:4.2.18":
-  version: 4.2.18
-  resolution: "@types/chai@npm:4.2.18"
-  checksum: db7e2c4e35d1f082ebb1d71e9617eff8f0de293bd39c52a07bb6d6bf93db91aa301e8ef16536497b49962689055736ab7cf6aaf6321c6cb4dd996c5691817811
+"@types/chai@npm:4.2.21":
+  version: 4.2.21
+  resolution: "@types/chai@npm:4.2.21"
+  checksum: fc7d32fbae47ad6d3576bcb8cf24a243af03c93bb97cd9456a5415da888ab78a03800dcc4cc25a21ad1b493bcdaee7377f163bc4dd8db463c3530dafddea205c
   languageName: node
   linkType: hard
 
@@ -4916,7 +4916,7 @@ fsevents@~2.3.1:
     "@nestjs/core": 7.6.15
     "@nestjs/testing": 7.6.15
     "@release-it/conventional-changelog": 2.0.1
-    "@types/chai": 4.2.18
+    "@types/chai": 4.2.21
     "@types/chai-as-promised": 7.1.4
     "@types/mocha": 8.2.2
     "@types/node": 14.14.45

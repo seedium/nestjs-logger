@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1"],
-            ["@types/chai", "npm:4.2.18"],
+            ["@types/chai", "npm:4.2.21"],
             ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.45"],
@@ -641,14 +641,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],
       ["@nestjs/core", [
         ["npm:7.6.15", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-c3dc9d46ea/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/cache/@nestjs-core-npm-7.6.15-d43e24d976-87326cdfdc.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "npm:7.6.15"]
           ],
           "linkType": "SOFT",
         }],
         ["virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15", {
-          "packageLocation": "./.yarn/unplugged/@nestjs-core-virtual-c3dc9d46ea/node_modules/@nestjs/core/",
+          "packageLocation": "./.yarn/$$virtual/@nestjs-core-virtual-c3dc9d46ea/0/cache/@nestjs-core-npm-7.6.15-d43e24d976-87326cdfdc.zip/node_modules/@nestjs/core/",
           "packageDependencies": [
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/common", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
@@ -1107,10 +1107,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:4.2.18", {
-          "packageLocation": "./.yarn/cache/@types-chai-npm-4.2.18-463de3d90e-db7e2c4e35.zip/node_modules/@types/chai/",
+        ["npm:4.2.21", {
+          "packageLocation": "./.yarn/cache/@types-chai-npm-4.2.21-22c1ed2cef-fc7d32fbae.zip/node_modules/@types/chai/",
           "packageDependencies": [
-            ["@types/chai", "npm:4.2.18"]
+            ["@types/chai", "npm:4.2.21"]
           ],
           "linkType": "HARD",
         }]
@@ -2131,7 +2131,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/chai-as-promised-virtual-9ef04201d5/0/cache/chai-as-promised-npm-7.1.1-cdc17e4612-747b85b679.zip/node_modules/chai-as-promised/",
           "packageDependencies": [
             ["chai-as-promised", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.1.1"],
-            ["@types/chai", "npm:4.2.18"],
+            ["@types/chai", "npm:4.2.21"],
             ["chai", "npm:4.3.4"],
             ["check-error", "npm:1.0.2"]
           ],
@@ -5770,7 +5770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nestjs/core", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@nestjs/testing", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:7.6.15"],
             ["@release-it/conventional-changelog", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:2.0.1"],
-            ["@types/chai", "npm:4.2.18"],
+            ["@types/chai", "npm:4.2.21"],
             ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:8.2.2"],
             ["@types/node", "npm:14.14.45"],
@@ -7317,7 +7317,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/$$virtual/sinon-chai-virtual-73ab05fbc3/0/cache/sinon-chai-npm-3.6.0-c3ea795100-dec7743324.zip/node_modules/sinon-chai/",
           "packageDependencies": [
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.6.0"],
-            ["@types/chai", "npm:4.2.18"],
+            ["@types/chai", "npm:4.2.21"],
             ["@types/sinon", "npm:10.0.0"],
             ["chai", "npm:4.3.4"],
             ["sinon", "npm:10.0.0"]
