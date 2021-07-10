@@ -942,7 +942,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pino@npm:*, @types/pino@npm:6.3.8":
+"@types/pino@npm:*":
   version: 6.3.8
   resolution: "@types/pino@npm:6.3.8"
   dependencies:
@@ -951,6 +951,18 @@ __metadata:
     "@types/pino-std-serializers": "*"
     "@types/sonic-boom": "*"
   checksum: f3cf2324ff72c4472c34dc5019615abfbeb86331a79ed401a135c0d9a1375f560e86d517c18019666d0c1eff2e6cf076925bfa4de836c865214f25f75784f3d4
+  languageName: node
+  linkType: hard
+
+"@types/pino@npm:6.3.9":
+  version: 6.3.9
+  resolution: "@types/pino@npm:6.3.9"
+  dependencies:
+    "@types/node": "*"
+    "@types/pino-pretty": "*"
+    "@types/pino-std-serializers": "*"
+    "@types/sonic-boom": "*"
+  checksum: c1f2aa8b81c1ed28a121aa1dbba9810d68425d6229cc4805a19b13f4e0249bcc3f72b07b1d58b49e153346e9bd7a8d97f03a538ba21468bf15e113c09fbd51d6
   languageName: node
   linkType: hard
 
@@ -2832,10 +2844,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-safe-stringify@npm:2.0.7, fast-safe-stringify@npm:^2.0.7":
+"fast-safe-stringify@npm:2.0.7":
   version: 2.0.7
   resolution: "fast-safe-stringify@npm:2.0.7"
   checksum: 7bd22543263b707870d70c6f2336b6e8563e34d6807dc388cc0566895e31e0a8273af017a7eb1c9538d0ef54288284e1c0585b557bd856491295a847159fd929
+  languageName: node
+  linkType: hard
+
+"fast-safe-stringify@npm:^2.0.8":
+  version: 2.0.8
+  resolution: "fast-safe-stringify@npm:2.0.8"
+  checksum: 2198ef6c4917ac6ad7a3cff8b80abc2762c89a0c700548459288fce45598a2488c0ae393cd456b4212a8259fed9d1630303106efe4ae3b1c35dab2fb66526cdd
   languageName: node
   linkType: hard
 
@@ -4920,7 +4939,7 @@ fsevents@~2.3.1:
     "@types/chai-as-promised": 7.1.4
     "@types/mocha": 8.2.2
     "@types/node": 14.14.45
-    "@types/pino": 6.3.8
+    "@types/pino": 6.3.9
     "@types/sinon": 10.0.0
     "@types/sinon-chai": 3.2.5
     "@typescript-eslint/eslint-plugin": 4.23.0
@@ -4937,7 +4956,7 @@ fsevents@~2.3.1:
     lodash.isstring: 4.0.1
     mocha: 8.4.0
     nyc: 15.1.0
-    pino: 6.11.3
+    pino: 6.12.0
     pinst: 2.1.6
     prettier: 2.3.0
     proxyquire: 2.1.3
@@ -5582,19 +5601,19 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"pino@npm:6.11.3":
-  version: 6.11.3
-  resolution: "pino@npm:6.11.3"
+"pino@npm:6.12.0":
+  version: 6.12.0
+  resolution: "pino@npm:6.12.0"
   dependencies:
     fast-redact: ^3.0.0
-    fast-safe-stringify: ^2.0.7
+    fast-safe-stringify: ^2.0.8
     flatstr: ^1.0.12
     pino-std-serializers: ^3.1.0
     quick-format-unescaped: ^4.0.3
     sonic-boom: ^1.0.2
   bin:
     pino: bin.js
-  checksum: c6fa52d31bfc2ab3e0b746aa4f859bd723dc7b0e3f15773cd9cdfc16846707a101ce9856c71a671e6896c24627dcfaee429fb943afaf85e226d796716d0c03db
+  checksum: 64fd7a49fc9b909bc1782f761c7a979e607b18ab8d88de752d739ad6a148cd2d8492a2e77ecb88cc71df7b950dfd2ec35a06b14a057c1bb75cb3684c1e19a364
   languageName: node
   linkType: hard
 
