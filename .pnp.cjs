@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.21"],
             ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:9.0.0"],
-            ["@types/node", "npm:14.17.15"],
+            ["@types/node", "npm:14.17.16"],
             ["@types/pino", "npm:6.3.11"],
             ["@types/sinon", "npm:10.0.2"],
             ["@types/sinon-chai", "npm:3.2.5"],
@@ -1301,10 +1301,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:14.17.15", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.15-9cfdb3e8eb-e0840304db.zip/node_modules/@types/node/",
+        ["npm:14.17.16", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-14.17.16-83a9ad6bd4-257e85d0c8.zip/node_modules/@types/node/",
           "packageDependencies": [
-            ["@types/node", "npm:14.17.15"]
+            ["@types/node", "npm:14.17.16"]
           ],
           "linkType": "HARD",
         }]
@@ -6021,7 +6021,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.21"],
             ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:9.0.0"],
-            ["@types/node", "npm:14.17.15"],
+            ["@types/node", "npm:14.17.16"],
             ["@types/pino", "npm:6.3.11"],
             ["@types/sinon", "npm:10.0.2"],
             ["@types/sinon-chai", "npm:3.2.5"],
@@ -8215,7 +8215,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:14.17.15"],
+            ["@types/node", "npm:14.17.16"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
