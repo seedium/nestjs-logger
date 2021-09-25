@@ -47,7 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.18"],
             ["@types/pino", "npm:6.3.11"],
-            ["@types/sinon", "npm:10.0.3"],
+            ["@types/sinon", "npm:10.0.4"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.31.2"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.31.2"],
@@ -1367,10 +1367,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/sinon", [
-        ["npm:10.0.3", {
-          "packageLocation": "./.yarn/cache/@types-sinon-npm-10.0.3-903304124e-a15a99721f.zip/node_modules/@types/sinon/",
+        ["npm:10.0.4", {
+          "packageLocation": "./.yarn/cache/@types-sinon-npm-10.0.4-4b06666644-8060328504.zip/node_modules/@types/sinon/",
           "packageDependencies": [
-            ["@types/sinon", "npm:10.0.3"],
+            ["@types/sinon", "npm:10.0.4"],
             ["@sinonjs/fake-timers", "npm:7.1.2"]
           ],
           "linkType": "HARD",
@@ -6020,7 +6020,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.18"],
             ["@types/pino", "npm:6.3.11"],
-            ["@types/sinon", "npm:10.0.3"],
+            ["@types/sinon", "npm:10.0.4"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.31.2"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:4.31.2"],
@@ -7587,7 +7587,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.7.0"],
             ["@types/chai", "npm:4.2.22"],
-            ["@types/sinon", "npm:10.0.3"],
+            ["@types/sinon", "npm:10.0.4"],
             ["chai", "npm:4.3.4"],
             ["sinon", "npm:11.1.2"]
           ],
