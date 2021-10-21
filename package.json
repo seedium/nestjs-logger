@@ -81,7 +81,7 @@
     "rxjs": "^6.0.0 || ^7.0.0"
   },
   "dependencies": {
-    "@types/pino": "6.3.11",
+    "@types/pino": "6.3.12",
     "lodash.isplainobject": "4.0.6",
     "lodash.isstring": "4.0.1",
     "pino": "6.13.3"

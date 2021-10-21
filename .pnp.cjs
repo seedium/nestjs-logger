@@ -46,7 +46,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.27"],
-            ["@types/pino", "npm:6.3.11"],
+            ["@types/pino", "npm:6.3.12"],
             ["@types/sinon", "npm:10.0.4"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:5.1.0"],
@@ -1341,10 +1341,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/pino", [
-        ["npm:6.3.11", {
-          "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.11-8fff910981-170d4a3ae1.zip/node_modules/@types/pino/",
+        ["npm:6.3.12", {
+          "packageLocation": "./.yarn/cache/@types-pino-npm-6.3.12-19c7982858-8017351466.zip/node_modules/@types/pino/",
           "packageDependencies": [
-            ["@types/pino", "npm:6.3.11"],
+            ["@types/pino", "npm:6.3.12"],
             ["@types/node", "npm:14.14.16"],
             ["@types/pino-pretty", "npm:4.7.0"],
             ["@types/pino-std-serializers", "npm:2.4.1"],
@@ -6039,7 +6039,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai-as-promised", "npm:7.1.4"],
             ["@types/mocha", "npm:9.0.0"],
             ["@types/node", "npm:14.17.27"],
-            ["@types/pino", "npm:6.3.11"],
+            ["@types/pino", "npm:6.3.12"],
             ["@types/sinon", "npm:10.0.4"],
             ["@types/sinon-chai", "npm:3.2.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:5.1.0"],
