@@ -5239,7 +5239,7 @@ fsevents@~2.3.2:
     rimraf: 3.0.2
     rxjs: 7.4.0
     semver: 7.3.5
-    sinon: 12.0.0
+    sinon: 12.0.1
     sinon-chai: 3.7.0
     source-map-support: 0.5.20
     ts-node: 10.4.0
@@ -6647,9 +6647,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"sinon@npm:12.0.0":
-  version: 12.0.0
-  resolution: "sinon@npm:12.0.0"
+"sinon@npm:12.0.1":
+  version: 12.0.1
+  resolution: "sinon@npm:12.0.1"
   dependencies:
     "@sinonjs/commons": ^1.8.3
     "@sinonjs/fake-timers": ^8.1.0
@@ -6657,7 +6657,7 @@ fsevents@~2.3.2:
     diff: ^5.0.0
     nise: ^5.1.0
     supports-color: ^7.2.0
-  checksum: 90035a4cb8e0370a6f8685ad9c71ab1e84c3936470b2e81e782e16b0a47f64730de6fe6407d1b4a69fcb2eb736926040323bf71b1c7f7912aaebbca4e1ae15eb
+  checksum: a264310c28df43e923a6e223c719953b7bd829b8e2fee7fe8b40154647e350b6bb4c18009be6f193e50892687f8e8c5d987d666fc3f6e4e78a9f807211ea365f
   languageName: node
   linkType: hard
 
