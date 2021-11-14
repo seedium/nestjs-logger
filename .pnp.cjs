@@ -68,7 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.4.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["release-it", "npm:14.11.6"],
+            ["release-it", "npm:14.11.7"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["semver", "npm:7.3.5"],
@@ -1085,7 +1085,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["conventional-changelog", "npm:3.1.24"],
             ["conventional-recommended-bump", "npm:6.1.0"],
             ["prepend-file", "npm:2.0.0"],
-            ["release-it", "npm:14.11.6"]
+            ["release-it", "npm:14.11.7"]
           ],
           "packagePeers": [
             "@types/release-it",
@@ -6083,7 +6083,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.4.1"],
             ["proxyquire", "npm:2.1.3"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["release-it", "npm:14.11.6"],
+            ["release-it", "npm:14.11.7"],
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["semver", "npm:7.3.5"],
@@ -7214,10 +7214,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["release-it", [
-        ["npm:14.11.6", {
-          "packageLocation": "./.yarn/cache/release-it-npm-14.11.6-944949c2df-f9a1ea2dd8.zip/node_modules/release-it/",
+        ["npm:14.11.7", {
+          "packageLocation": "./.yarn/cache/release-it-npm-14.11.7-6bf3bde93d-26bc9029f8.zip/node_modules/release-it/",
           "packageDependencies": [
-            ["release-it", "npm:14.11.6"],
+            ["release-it", "npm:14.11.7"],
             ["@iarna/toml", "npm:2.2.5"],
             ["@octokit/rest", "npm:18.10.0"],
             ["async-retry", "npm:1.3.3"],
