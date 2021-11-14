@@ -72,7 +72,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["semver", "npm:7.3.5"],
-            ["sinon", "npm:12.0.0"],
+            ["sinon", "npm:12.0.1"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.7.0"],
             ["source-map-support", "npm:0.5.20"],
             ["ts-node", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:10.4.0"],
@@ -6133,7 +6133,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:3.0.2"],
             ["rxjs", "npm:7.4.0"],
             ["semver", "npm:7.3.5"],
-            ["sinon", "npm:12.0.0"],
+            ["sinon", "npm:12.0.1"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.7.0"],
             ["source-map-support", "npm:0.5.20"],
             ["ts-node", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:10.4.0"],
@@ -7629,10 +7629,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["sinon", [
-        ["npm:12.0.0", {
-          "packageLocation": "./.yarn/cache/sinon-npm-12.0.0-0b2e3ebdc0-90035a4cb8.zip/node_modules/sinon/",
+        ["npm:12.0.1", {
+          "packageLocation": "./.yarn/cache/sinon-npm-12.0.1-b9d98d3d3a-a264310c28.zip/node_modules/sinon/",
           "packageDependencies": [
-            ["sinon", "npm:12.0.0"],
+            ["sinon", "npm:12.0.1"],
             ["@sinonjs/commons", "npm:1.8.3"],
             ["@sinonjs/fake-timers", "npm:8.1.0"],
             ["@sinonjs/samsam", "npm:6.0.2"],
@@ -7658,7 +7658,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/chai", "npm:4.2.22"],
             ["@types/sinon", "npm:10.0.6"],
             ["chai", "npm:4.3.4"],
-            ["sinon", "npm:12.0.0"]
+            ["sinon", "npm:12.0.1"]
           ],
           "packagePeers": [
             "@types/chai",
