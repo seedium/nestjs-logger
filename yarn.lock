@@ -505,9 +505,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/common@npm:8.2.2":
-  version: 8.2.2
-  resolution: "@nestjs/common@npm:8.2.2"
+"@nestjs/common@npm:8.2.3":
+  version: 8.2.3
+  resolution: "@nestjs/common@npm:8.2.3"
   dependencies:
     axios: 0.24.0
     iterare: 1.2.1
@@ -526,13 +526,13 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 5d74143630d9bbe28d18bb9c47a948f84c2b62aed0974de0963ec3e94da9964b9b214da3622b4b6970456dfe03dc12439728c57570ffca5e2283b4fe3ac6daee
+  checksum: 2a06ffaf58da0622727621db0b6574cad94f4a0d9b895bb8352f736207c7087fce477185b2cacd3b013b0386860e573b0d27b900783df6885e32fc943d5e87b8
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:8.2.2":
-  version: 8.2.2
-  resolution: "@nestjs/core@npm:8.2.2"
+"@nestjs/core@npm:8.2.3":
+  version: 8.2.3
+  resolution: "@nestjs/core@npm:8.2.3"
   dependencies:
     "@nuxtjs/opencollective": 0.3.2
     fast-safe-stringify: 2.1.1
@@ -555,13 +555,13 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 5dee8d70b9c8e09c3810f028fdaa91b0025fd11bf2fd47b74d44ee44b6cce9245709f3b69a1661be23ba67688ed67eeb85770a2d0c1812534429976ba103d8e8
+  checksum: 35da95f8c17ab5d44b7aecef91cc77bdf0ddc23df93854d4a2ac8f1db633bbe17f96434128d343aee17464e332f2c6431abad4e3ed18f6a8b5b63d5fedb57655
   languageName: node
   linkType: hard
 
-"@nestjs/testing@npm:8.2.2":
-  version: 8.2.2
-  resolution: "@nestjs/testing@npm:8.2.2"
+"@nestjs/testing@npm:8.2.3":
+  version: 8.2.3
+  resolution: "@nestjs/testing@npm:8.2.3"
   dependencies:
     optional: 0.1.4
     tslib: 2.3.1
@@ -575,7 +575,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: 0491d5212f7a26e16db3394cf1ac7c7165d484e50e0496471461745dc7716319e54e6d9e39a21a149b9f155bea5878b351f985ca092282cf2e7e6f8f28c79d70
+  checksum: da18f96227083aea175a41c9fd753d6f606c1b66d4ec2a6cf6b47d371bbeb69305aff0a5238794861e87fe8e7bc987c40205ddd82e6bcf8dc462fc9b6c16ed99
   languageName: node
   linkType: hard
 
@@ -5199,9 +5199,9 @@ fsevents@~2.3.2:
     "@commitlint/cli": 15.0.0
     "@commitlint/config-angular": 15.0.0
     "@istanbuljs/nyc-config-typescript": 1.0.1
-    "@nestjs/common": 8.2.2
-    "@nestjs/core": 8.2.2
-    "@nestjs/testing": 8.2.2
+    "@nestjs/common": 8.2.3
+    "@nestjs/core": 8.2.3
+    "@nestjs/testing": 8.2.3
     "@release-it/conventional-changelog": 3.3.0
     "@types/chai": 4.2.22
     "@types/chai-as-promised": 7.1.4
