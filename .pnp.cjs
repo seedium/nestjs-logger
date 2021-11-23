@@ -58,7 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.3.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:8.3.0"],
             ["husky", "npm:7.0.4"],
-            ["lint-staged", "npm:12.0.3"],
+            ["lint-staged", "npm:12.1.2"],
             ["lodash.isplainobject", "npm:4.0.6"],
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:9.1.3"],
@@ -3065,10 +3065,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:b82f18aacd0188ebf39a6b8c4df13ebe79b74bf394979bcc856a14147dab87983f2a10253fda95118a89de3a74367a33c5f5f5a201c960091338ce3b2b4c4e7a#npm:4.3.2", {
-          "packageLocation": "./.yarn/__virtual__/debug-virtual-5f98aafdb6/0/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
+        ["virtual:9bba118e9e86d5b7a263878d5d7ca7d28ac5d563b0e84efa11a4c80b7c40995ff14ae1b8ef34dfb76a0ae0140df0e7183e88ca6788d8e881f901efe04991dedd#npm:4.3.2", {
+          "packageLocation": "./.yarn/__virtual__/debug-virtual-f787eb9ef1/0/cache/debug-npm-4.3.2-f0148b6afe-820ea160e2.zip/node_modules/debug/",
           "packageDependencies": [
-            ["debug", "virtual:b82f18aacd0188ebf39a6b8c4df13ebe79b74bf394979bcc856a14147dab87983f2a10253fda95118a89de3a74367a33c5f5f5a201c960091338ce3b2b4c4e7a#npm:4.3.2"],
+            ["debug", "virtual:9bba118e9e86d5b7a263878d5d7ca7d28ac5d563b0e84efa11a4c80b7c40995ff14ae1b8ef34dfb76a0ae0140df0e7183e88ca6788d8e881f901efe04991dedd#npm:4.3.2"],
             ["@types/supports-color", null],
             ["ms", "npm:2.1.2"],
             ["supports-color", "npm:9.1.0"]
@@ -5456,6 +5456,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["lilconfig", [
+        ["npm:2.0.4", {
+          "packageLocation": "./.yarn/cache/lilconfig-npm-2.0.4-f0d8b03457-02ae530aa4.zip/node_modules/lilconfig/",
+          "packageDependencies": [
+            ["lilconfig", "npm:2.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["lines-and-columns", [
         ["npm:1.1.6", {
           "packageLocation": "./.yarn/cache/lines-and-columns-npm-1.1.6-23e74fab67-198a5436b1.zip/node_modules/lines-and-columns/",
@@ -5466,23 +5475,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["lint-staged", [
-        ["npm:12.0.3", {
-          "packageLocation": "./.yarn/cache/lint-staged-npm-12.0.3-b82f18aacd-08a20d9c93.zip/node_modules/lint-staged/",
+        ["npm:12.1.2", {
+          "packageLocation": "./.yarn/cache/lint-staged-npm-12.1.2-9bba118e9e-ec84ce4f74.zip/node_modules/lint-staged/",
           "packageDependencies": [
-            ["lint-staged", "npm:12.0.3"],
+            ["lint-staged", "npm:12.1.2"],
             ["cli-truncate", "npm:3.1.0"],
             ["colorette", "npm:2.0.16"],
             ["commander", "npm:8.3.0"],
-            ["cosmiconfig", "npm:7.0.1"],
-            ["debug", "virtual:b82f18aacd0188ebf39a6b8c4df13ebe79b74bf394979bcc856a14147dab87983f2a10253fda95118a89de3a74367a33c5f5f5a201c960091338ce3b2b4c4e7a#npm:4.3.2"],
+            ["debug", "virtual:9bba118e9e86d5b7a263878d5d7ca7d28ac5d563b0e84efa11a4c80b7c40995ff14ae1b8ef34dfb76a0ae0140df0e7183e88ca6788d8e881f901efe04991dedd#npm:4.3.2"],
             ["enquirer", "npm:2.3.6"],
             ["execa", "npm:5.1.1"],
-            ["listr2", "virtual:b82f18aacd0188ebf39a6b8c4df13ebe79b74bf394979bcc856a14147dab87983f2a10253fda95118a89de3a74367a33c5f5f5a201c960091338ce3b2b4c4e7a#npm:3.13.3"],
+            ["lilconfig", "npm:2.0.4"],
+            ["listr2", "virtual:9bba118e9e86d5b7a263878d5d7ca7d28ac5d563b0e84efa11a4c80b7c40995ff14ae1b8ef34dfb76a0ae0140df0e7183e88ca6788d8e881f901efe04991dedd#npm:3.13.3"],
             ["micromatch", "npm:4.0.4"],
             ["normalize-path", "npm:3.0.0"],
             ["object-inspect", "npm:1.11.0"],
             ["string-argv", "npm:0.3.1"],
-            ["supports-color", "npm:9.1.0"]
+            ["supports-color", "npm:9.1.0"],
+            ["yaml", "npm:1.10.2"]
           ],
           "linkType": "HARD",
         }]
@@ -5495,10 +5505,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:b82f18aacd0188ebf39a6b8c4df13ebe79b74bf394979bcc856a14147dab87983f2a10253fda95118a89de3a74367a33c5f5f5a201c960091338ce3b2b4c4e7a#npm:3.13.3", {
-          "packageLocation": "./.yarn/__virtual__/listr2-virtual-21c78231d8/0/cache/listr2-npm-3.13.3-521a6ceab5-3ece0f132c.zip/node_modules/listr2/",
+        ["virtual:9bba118e9e86d5b7a263878d5d7ca7d28ac5d563b0e84efa11a4c80b7c40995ff14ae1b8ef34dfb76a0ae0140df0e7183e88ca6788d8e881f901efe04991dedd#npm:3.13.3", {
+          "packageLocation": "./.yarn/__virtual__/listr2-virtual-5da6ca8e1c/0/cache/listr2-npm-3.13.3-521a6ceab5-3ece0f132c.zip/node_modules/listr2/",
           "packageDependencies": [
-            ["listr2", "virtual:b82f18aacd0188ebf39a6b8c4df13ebe79b74bf394979bcc856a14147dab87983f2a10253fda95118a89de3a74367a33c5f5f5a201c960091338ce3b2b4c4e7a#npm:3.13.3"],
+            ["listr2", "virtual:9bba118e9e86d5b7a263878d5d7ca7d28ac5d563b0e84efa11a4c80b7c40995ff14ae1b8ef34dfb76a0ae0140df0e7183e88ca6788d8e881f901efe04991dedd#npm:3.13.3"],
             ["@types/enquirer", null],
             ["cli-truncate", "npm:2.1.0"],
             ["clone", "npm:2.1.2"],
@@ -6150,7 +6160,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.3.0"],
             ["eslint-config-prettier", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:8.3.0"],
             ["husky", "npm:7.0.4"],
-            ["lint-staged", "npm:12.0.3"],
+            ["lint-staged", "npm:12.1.2"],
             ["lodash.isplainobject", "npm:4.0.6"],
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:9.1.3"],
