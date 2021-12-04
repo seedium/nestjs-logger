@@ -1096,13 +1096,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sinon-chai@npm:3.2.5":
-  version: 3.2.5
-  resolution: "@types/sinon-chai@npm:3.2.5"
+"@types/sinon-chai@npm:3.2.6":
+  version: 3.2.6
+  resolution: "@types/sinon-chai@npm:3.2.6"
   dependencies:
     "@types/chai": "*"
     "@types/sinon": "*"
-  checksum: ac332b8f2c9e13f081773a1c01fa12225768879ed310b36ba954982fccdf464fca4c3b852a60b2ca8e232026dd0a386b04f638bc903761c0d33375d9b3e9240f
+  checksum: 0613ee8eafd59abb9f8fb4c01f8aa1244fe44735050fb233fadba3ebcccf84920f93c67ef8b9f6e22bab78b0e6a1edc49d7b1b86de6bb4adaca2d6c4736bddc3
   languageName: node
   linkType: hard
 
@@ -5231,7 +5231,7 @@ fsevents@~2.3.2:
     "@types/node": 14.18.0
     "@types/pino": 6.3.12
     "@types/sinon": 10.0.6
-    "@types/sinon-chai": 3.2.5
+    "@types/sinon-chai": 3.2.6
     "@typescript-eslint/eslint-plugin": 5.5.0
     "@typescript-eslint/parser": 5.5.0
     chai: 4.3.4
