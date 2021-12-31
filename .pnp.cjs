@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.18.0"],
             ["@types/pino", "npm:7.0.4"],
             ["@types/sinon", "npm:10.0.6"],
-            ["@types/sinon-chai", "npm:3.2.6"],
+            ["@types/sinon-chai", "npm:3.2.8"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:5.6.0"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:5.6.0"],
             ["chai", "npm:4.3.4"],
@@ -1379,10 +1379,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/sinon-chai", [
-        ["npm:3.2.6", {
-          "packageLocation": "./.yarn/cache/@types-sinon-chai-npm-3.2.6-2935a5d4e9-0613ee8eaf.zip/node_modules/@types/sinon-chai/",
+        ["npm:3.2.8", {
+          "packageLocation": "./.yarn/cache/@types-sinon-chai-npm-3.2.8-0ae345a434-a0f7a8cef2.zip/node_modules/@types/sinon-chai/",
           "packageDependencies": [
-            ["@types/sinon-chai", "npm:3.2.6"],
+            ["@types/sinon-chai", "npm:3.2.8"],
             ["@types/chai", "npm:4.2.14"],
             ["@types/sinon", "npm:9.0.10"]
           ],
@@ -6072,7 +6072,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:14.18.0"],
             ["@types/pino", "npm:7.0.4"],
             ["@types/sinon", "npm:10.0.6"],
-            ["@types/sinon-chai", "npm:3.2.6"],
+            ["@types/sinon-chai", "npm:3.2.8"],
             ["@typescript-eslint/eslint-plugin", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:5.6.0"],
             ["@typescript-eslint/parser", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:5.6.0"],
             ["chai", "npm:4.3.4"],
