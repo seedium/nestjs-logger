@@ -503,11 +503,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nestjs/common@npm:8.2.3":
-  version: 8.2.3
-  resolution: "@nestjs/common@npm:8.2.3"
+"@nestjs/common@npm:8.4.0":
+  version: 8.4.0
+  resolution: "@nestjs/common@npm:8.4.0"
   dependencies:
-    axios: 0.24.0
+    axios: 0.26.0
     iterare: 1.2.1
     tslib: 2.3.1
     uuid: 8.3.2
@@ -524,18 +524,18 @@ __metadata:
       optional: true
     class-validator:
       optional: true
-  checksum: 2a06ffaf58da0622727621db0b6574cad94f4a0d9b895bb8352f736207c7087fce477185b2cacd3b013b0386860e573b0d27b900783df6885e32fc943d5e87b8
+  checksum: 446f0da7e1b322b9169988923671f70bec9d62456adc593e95a76ad550da0d962e9fc6df2e0a3aa650d422deb488b31abf5ace52974261d1b65d883bb2035180
   languageName: node
   linkType: hard
 
-"@nestjs/core@npm:8.2.3":
-  version: 8.2.3
-  resolution: "@nestjs/core@npm:8.2.3"
+"@nestjs/core@npm:8.4.0":
+  version: 8.4.0
+  resolution: "@nestjs/core@npm:8.4.0"
   dependencies:
     "@nuxtjs/opencollective": 0.3.2
     fast-safe-stringify: 2.1.1
     iterare: 1.2.1
-    object-hash: 2.2.0
+    object-hash: 3.0.0
     path-to-regexp: 3.2.0
     tslib: 2.3.1
     uuid: 8.3.2
@@ -553,13 +553,13 @@ __metadata:
       optional: true
     "@nestjs/websockets":
       optional: true
-  checksum: 35da95f8c17ab5d44b7aecef91cc77bdf0ddc23df93854d4a2ac8f1db633bbe17f96434128d343aee17464e332f2c6431abad4e3ed18f6a8b5b63d5fedb57655
+  checksum: 83dc369822f667fafa0ce12626b841be7533fbca846f546e4764f5a285782cff830268bbeac795f21d982d963f5cd3b2d05d533bfdcb159c77e1a7153687960d
   languageName: node
   linkType: hard
 
-"@nestjs/testing@npm:8.2.3":
-  version: 8.2.3
-  resolution: "@nestjs/testing@npm:8.2.3"
+"@nestjs/testing@npm:8.4.0":
+  version: 8.4.0
+  resolution: "@nestjs/testing@npm:8.4.0"
   dependencies:
     optional: 0.1.4
     tslib: 2.3.1
@@ -573,7 +573,7 @@ __metadata:
       optional: true
     "@nestjs/platform-express":
       optional: true
-  checksum: da18f96227083aea175a41c9fd753d6f606c1b66d4ec2a6cf6b47d371bbeb69305aff0a5238794861e87fe8e7bc987c40205ddd82e6bcf8dc462fc9b6c16ed99
+  checksum: f0d14f17b9bf7981b15351598a57c1cd1dfbd1804ef3fbb54bae93e2e13fd6470fe16925d0cc6def421221307024dfa502158b9bb305d306de22e4cbfbf8ca02
   languageName: node
   linkType: hard
 
@@ -1540,12 +1540,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:0.24.0":
-  version: 0.24.0
-  resolution: "axios@npm:0.24.0"
+"axios@npm:0.26.0":
+  version: 0.26.0
+  resolution: "axios@npm:0.26.0"
   dependencies:
-    follow-redirects: ^1.14.4
-  checksum: 468cf496c08a6aadfb7e699bebdac02851e3043d4e7d282350804ea8900e30d368daa6e3cd4ab83b8ddb5a3b1e17a5a21ada13fc9cebd27b74828f47a4236316
+    follow-redirects: ^1.14.8
+  checksum: d7a8b898f4157bedeb2e06c03b16133b91b354c041205bea732ce58b7a21f373d22057b0eea0d482838145ce6ff482b359750d9bcb8dd19d45e3928e3c65c280
   languageName: node
   linkType: hard
 
@@ -3199,13 +3199,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.4":
-  version: 1.14.4
-  resolution: "follow-redirects@npm:1.14.4"
+"follow-redirects@npm:^1.14.8":
+  version: 1.14.9
+  resolution: "follow-redirects@npm:1.14.9"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: d4ce74cf5c6f363168b97e706b914eb9ffb6bf4d4c6d8f8330b93088d9b90e566611ddbcf0e42c8ed5fd17598dfeda1d19230d3e9d6d6c6b4d1c10ec3a0b99be
+  checksum: f5982e0eb481818642492d3ca35a86989c98af1128b8e1a62911a3410621bc15d2b079e8170b35b19d3bdee770b73ed431a257ed86195af773771145baa57845
   languageName: node
   linkType: hard
 
@@ -5177,9 +5177,9 @@ fsevents@~2.3.2:
     "@commitlint/cli": 15.0.0
     "@commitlint/config-angular": 15.0.0
     "@istanbuljs/nyc-config-typescript": 1.0.2
-    "@nestjs/common": 8.2.3
-    "@nestjs/core": 8.2.3
-    "@nestjs/testing": 8.2.3
+    "@nestjs/common": 8.4.0
+    "@nestjs/core": 8.4.0
+    "@nestjs/testing": 8.4.0
     "@release-it/conventional-changelog": 3.3.0
     "@types/chai": 4.3.0
     "@types/chai-as-promised": 7.1.4
@@ -5426,10 +5426,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"object-hash@npm:2.2.0":
-  version: 2.2.0
-  resolution: "object-hash@npm:2.2.0"
-  checksum: 55ba841e3adce9c4f1b9b46b41983eda40f854e0d01af2802d3ae18a7085a17168d6b81731d43fdf1d6bcbb3c9f9c56d22c8fea992203ad90a38d7d919bc28f1
+"object-hash@npm:3.0.0":
+  version: 3.0.0
+  resolution: "object-hash@npm:3.0.0"
+  checksum: 80b4904bb3857c52cc1bfd0b52c0352532ca12ed3b8a6ff06a90cd209dfda1b95cee059a7625eb9da29537027f68ac4619363491eedb2f5d3dddbba97494fd6c
   languageName: node
   linkType: hard
 
