@@ -5202,7 +5202,7 @@ fsevents@~2.3.2:
     lodash.isstring: 4.0.1
     mocha: 9.1.3
     nyc: 15.1.0
-    pino: 7.5.1
+    pino: 7.8.0
     pinst: 2.1.6
     prettier: 2.5.1
     proxyquire: 2.1.3
@@ -5897,7 +5897,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"pino@npm:*, pino@npm:7.5.1":
+"pino@npm:*":
   version: 7.5.1
   resolution: "pino@npm:7.5.1"
   dependencies:
@@ -5915,6 +5915,26 @@ fsevents@~2.3.2:
   bin:
     pino: bin.js
   checksum: 2f71ebadb08dd8a9d6cd82e9dd67c3be1f16756ec977aa8b5e65d28e8b70d7512543c071fe011cf187dcdb9d8b8aea434881a452a34d79040e44de54078a58b7
+  languageName: node
+  linkType: hard
+
+"pino@npm:7.8.0":
+  version: 7.8.0
+  resolution: "pino@npm:7.8.0"
+  dependencies:
+    fast-redact: ^3.0.0
+    on-exit-leak-free: ^0.2.0
+    pino-abstract-transport: v0.5.0
+    pino-std-serializers: ^4.0.0
+    process-warning: ^1.0.0
+    quick-format-unescaped: ^4.0.3
+    real-require: ^0.1.0
+    safe-stable-stringify: ^2.1.0
+    sonic-boom: ^2.2.1
+    thread-stream: ^0.13.0
+  bin:
+    pino: bin.js
+  checksum: 0be8a440f81e7e2f4a22156e5886d550c618d6609572f0f262ccbc15077b702ee56c17d8bff7779361a74e64e4257f533b6038f46845e583315895ac6babc753
   languageName: node
   linkType: hard
 
@@ -5984,6 +6004,13 @@ fsevents@~2.3.2:
   dependencies:
     fromentries: ^1.2.0
   checksum: 597769e3db6a8e2cb1cd64a952bbc150220588debac31c7cf1a9f620ce981e25583d8d70848d8a14953577608512984a8808c3be77e09af8ebdcdc14ec23a295
+  languageName: node
+  linkType: hard
+
+"process-warning@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "process-warning@npm:1.0.0"
+  checksum: c708a03241deec3cabaeee39c4f9ee8c4d71f1c5ef9b746c8252cdb952a6059068cfcdaf348399775244cbc441b6ae5e26a9c87ed371f88335d84f26d19180f9
   languageName: node
   linkType: hard
 

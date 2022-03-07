@@ -63,7 +63,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:9.1.3"],
             ["nyc", "npm:15.1.0"],
-            ["pino", "npm:7.5.1"],
+            ["pino", "npm:7.8.0"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.5.1"],
             ["proxyquire", "npm:2.1.3"],
@@ -6087,7 +6087,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash.isstring", "npm:4.0.1"],
             ["mocha", "npm:9.1.3"],
             ["nyc", "npm:15.1.0"],
-            ["pino", "npm:7.5.1"],
+            ["pino", "npm:7.8.0"],
             ["pinst", "npm:2.1.6"],
             ["prettier", "npm:2.5.1"],
             ["proxyquire", "npm:2.1.3"],
@@ -6835,6 +6835,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["thread-stream", "npm:0.13.0"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:7.8.0", {
+          "packageLocation": "./.yarn/cache/pino-npm-7.8.0-e228d193ef-0be8a440f8.zip/node_modules/pino/",
+          "packageDependencies": [
+            ["pino", "npm:7.8.0"],
+            ["fast-redact", "npm:3.0.0"],
+            ["on-exit-leak-free", "npm:0.2.0"],
+            ["pino-abstract-transport", "npm:0.5.0"],
+            ["pino-std-serializers", "npm:4.0.0"],
+            ["process-warning", "npm:1.0.0"],
+            ["quick-format-unescaped", "npm:4.0.3"],
+            ["real-require", "npm:0.1.0"],
+            ["safe-stable-stringify", "npm:2.3.1"],
+            ["sonic-boom", "npm:2.4.1"],
+            ["thread-stream", "npm:0.13.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["pino-abstract-transport", [
@@ -6930,6 +6947,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["process-on-spawn", "npm:1.0.0"],
             ["fromentries", "npm:1.3.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["process-warning", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/process-warning-npm-1.0.0-8b886c4a9d-c708a03241.zip/node_modules/process-warning/",
+          "packageDependencies": [
+            ["process-warning", "npm:1.0.0"]
           ],
           "linkType": "HARD",
         }]
