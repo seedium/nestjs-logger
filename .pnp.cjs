@@ -70,7 +70,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.11.8"],
             ["rimraf", "npm:3.0.2"],
-            ["rxjs", "npm:7.4.0"],
+            ["rxjs", "npm:7.5.4"],
             ["semver", "npm:7.3.5"],
             ["sinon", "npm:12.0.1"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.7.0"],
@@ -679,7 +679,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["class-validator", null],
             ["iterare", "npm:1.2.1"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["rxjs", "npm:7.4.0"],
+            ["rxjs", "npm:7.5.4"],
             ["tslib", "npm:2.3.1"],
             ["uuid", "npm:8.3.2"]
           ],
@@ -726,7 +726,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["object-hash", "npm:2.2.0"],
             ["path-to-regexp", "npm:3.2.0"],
             ["reflect-metadata", "npm:0.1.13"],
-            ["rxjs", "npm:7.4.0"],
+            ["rxjs", "npm:7.5.4"],
             ["tslib", "npm:2.3.1"],
             ["uuid", "npm:8.3.2"]
           ],
@@ -6094,7 +6094,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["reflect-metadata", "npm:0.1.13"],
             ["release-it", "npm:14.11.8"],
             ["rimraf", "npm:3.0.2"],
-            ["rxjs", "npm:7.4.0"],
+            ["rxjs", "npm:7.5.4"],
             ["semver", "npm:7.3.5"],
             ["sinon", "npm:12.0.1"],
             ["sinon-chai", "virtual:8300a6157ffe379d66145f2b4017ec0cbeb6fd293a09687d37c806fbdc3c4238a4517f82cef99d056b09498ddd73a7d4621f33d18352c9c5d6ec37c86d3df4d5#npm:3.7.0"],
@@ -7501,6 +7501,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["rxjs", "npm:7.4.0"],
             ["tslib", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.5.4", {
+          "packageLocation": "./.yarn/cache/rxjs-npm-7.5.4-1527612cf9-6f55f835f2.zip/node_modules/rxjs/",
+          "packageDependencies": [
+            ["rxjs", "npm:7.5.4"],
+            ["tslib", "npm:2.3.1"]
           ],
           "linkType": "HARD",
         }]
